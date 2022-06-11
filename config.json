@@ -1,0 +1,1538 @@
+{
+  "theme": {
+    "name": "PlateauTheme",
+    "styles": [
+      "orange",
+      "dark-blue",
+      "black",
+      "default",
+      "medium-grey",
+      "esri-blue",
+      "dark-green",
+      "esri-green"
+    ],
+    "version": "2.24",
+    "sharedTheme": {
+      "isPortalSupport": true,
+      "useHeader": false,
+      "useLogo": false
+    },
+    "customStyles": {
+      "mainBackgroundColor": "#cf142b"
+    }
+  },
+  "portalUrl": "https://japedreiradev.maps.arcgis.com",
+  "appId": "",
+  "authorizedCrossOriginDomains": [],
+  "title": "Infraestructuras eólicas de Lugo",
+  "subtitle": "ArcGIS Online",
+  "keepAppState": true,
+  "logo": "images/logo.png",
+  "geometryService": "https://utility.arcgisonline.com/arcgis/rest/services/Geometry/GeometryServer",
+  "links": [],
+  "widgetOnScreen": {
+    "widgets": [
+      {
+        "uri": "themes/PlateauTheme/widgets/HeaderController/Widget",
+        "position": {
+          "left": 0,
+          "top": 0,
+          "right": 0,
+          "height": 40,
+          "relativeTo": "browser"
+        },
+        "version": "2.24",
+        "id": "themes_PlateauTheme_widgets_HeaderController_Widget_20",
+        "name": "HeaderController"
+      },
+      {
+        "uri": "widgets/Scalebar/Widget",
+        "position": {
+          "left": 25,
+          "bottom": 25,
+          "relativeTo": "map"
+        },
+        "version": "2.24",
+        "id": "widgets_Scalebar_Widget_21",
+        "name": "Scalebar"
+      },
+      {
+        "uri": "widgets/Search/Widget",
+        "position": {
+          "left": 55,
+          "top": 5,
+          "relativeTo": "map"
+        },
+        "version": "2.24",
+        "id": "widgets_Search_Widget_22",
+        "name": "Search",
+        "config": "configs/Search/config_widgets_Search_Widget_22.json"
+      },
+      {
+        "uri": "widgets/Coordinate/Widget",
+        "position": {
+          "left": 200,
+          "bottom": 20,
+          "relativeTo": "map"
+        },
+        "version": "2.24",
+        "id": "widgets_Coordinate_Widget_23",
+        "name": "Coordinate",
+        "config": "configs/Coordinate/config_widgets_Coordinate_Widget_23.json"
+      },
+      {
+        "uri": "widgets/OverviewMap/Widget",
+        "position": {
+          "right": 0,
+          "bottom": 0,
+          "zIndex": 1,
+          "relativeTo": "map"
+        },
+        "version": "2.24",
+        "id": "widgets_OverviewMap_Widget_24",
+        "name": "OverviewMap",
+        "config": "configs/OverviewMap/config_widgets_OverviewMap_Widget_24.json"
+      },
+      {
+        "uri": "widgets/HomeButton/Widget",
+        "position": {
+          "left": 7,
+          "top": 75,
+          "relativeTo": "map"
+        },
+        "version": "2.24",
+        "id": "widgets_HomeButton_Widget_25",
+        "name": "HomeButton"
+      },
+      {
+        "uri": "widgets/MyLocation/Widget",
+        "position": {
+          "left": 7,
+          "top": 110,
+          "relativeTo": "map"
+        },
+        "version": "2.24",
+        "id": "widgets_MyLocation_Widget_26",
+        "name": "MyLocation"
+      },
+      {
+        "uri": "widgets/AttributeTable/Widget",
+        "version": "2.24",
+        "position": {
+          "relativeTo": "browser"
+        },
+        "id": "widgets_AttributeTable_Widget_27",
+        "name": "AttributeTable",
+        "config": "configs/AttributeTable/config_widgets_AttributeTable_Widget_27.json"
+      },
+      {
+        "uri": "widgets/Splash/Widget",
+        "visible": false,
+        "position": {
+          "relativeTo": "browser"
+        },
+        "version": "2.24",
+        "id": "widgets_Splash_Widget_28",
+        "name": "Splash"
+      },
+      {
+        "uri": "widgets/ZoomSlider/Widget",
+        "position": {
+          "top": 5,
+          "left": 7,
+          "relativeTo": "map"
+        },
+        "version": "2.24",
+        "id": "widgets_ZoomSlider_Widget_29",
+        "name": "ZoomSlider"
+      },
+      {
+        "uri": "widgets/ExtentNavigate/Widget",
+        "position": {
+          "top": 149,
+          "left": 7,
+          "relativeTo": "map"
+        },
+        "version": "2.24",
+        "id": "widgets_ExtentNavigate_Widget_30",
+        "name": "ExtentNavigate"
+      }
+    ],
+    "panel": {
+      "uri": "jimu/OnScreenWidgetPanel",
+      "position": {
+        "relativeTo": "map"
+      }
+    }
+  },
+  "map": {
+    "3D": false,
+    "2D": true,
+    "position": {
+      "left": 0,
+      "top": 40,
+      "right": 0,
+      "bottom": 0
+    },
+    "itemId": "548cbe1e8fd64789899a29573a65e3cd",
+    "mapOptions": {
+      "extent": {
+        "xmin": -962643.4150908807,
+        "ymin": 5206380.392418755,
+        "xmax": -694196.571753471,
+        "ymax": 5429882.263124503,
+        "spatialReference": {
+          "wkid": 102100
+        }
+      }
+    },
+    "id": "map",
+    "portalUrl": "https://japedreiradev.maps.arcgis.com",
+    "mapRefreshInterval": {
+      "useWebMapRefreshInterval": true
+    }
+  },
+  "widgetPool": {
+    "panel": {
+      "uri": "themes/PlateauTheme/panels/FoldablePanel/Panel",
+      "position": {
+        "top": 5,
+        "right": 5,
+        "bottom": 5,
+        "zIndex": 5,
+        "relativeTo": "map"
+      }
+    },
+    "widgets": [
+      {
+        "uri": "widgets/Legend/Widget",
+        "version": "2.24",
+        "id": "widgets_Legend_Widget_18",
+        "name": "Legend",
+        "index": 2
+      },
+      {
+        "uri": "widgets/LayerList/Widget",
+        "version": "2.24",
+        "id": "widgets_LayerList_Widget_19",
+        "name": "LayerList",
+        "index": 3
+      },
+      {
+        "name": "BasemapGallery",
+        "version": "2.24",
+        "uri": "widgets/BasemapGallery/Widget",
+        "config": "configs/BasemapGallery/config_widgets_BasemapGallery_Widget_32.json",
+        "index": 4,
+        "id": "widgets_BasemapGallery_Widget_32"
+      },
+      {
+        "name": "Measurement",
+        "version": "2.24",
+        "uri": "widgets/Measurement/Widget",
+        "config": "configs/Measurement/config_widgets_Measurement_Widget_35.json",
+        "index": 5,
+        "id": "widgets_Measurement_Widget_35"
+      },
+      {
+        "name": "Query",
+        "version": "2.24",
+        "uri": "widgets/Query/Widget",
+        "config": "configs/Query/config_widgets_Query_Widget_31.json",
+        "index": 6,
+        "id": "widgets_Query_Widget_31"
+      },
+      {
+        "name": "ShowNaturalAffections",
+        "version": "2.23",
+        "IsController": false,
+        "uri": "widgets/ShowNaturalAffections/Widget",
+        "config": "configs/ShowNaturalAffections/config_widgets_ShowNaturalAffections_Widget_33.json",
+        "index": 7,
+        "id": "widgets_ShowNaturalAffections_Widget_33",
+        "label": "Mostrar afecciones ambientales"
+      },
+      {
+        "name": "Summary",
+        "label": "Resumen potencia nominal aeroxeneradores",
+        "version": "2.24",
+        "uri": "widgets/Summary/Widget",
+        "config": "configs/Summary/config_widgets_Summary_Widget_36.json",
+        "index": 8,
+        "id": "widgets_Summary_Widget_36",
+        "position": {
+          "relativeTo": "map"
+        }
+      },
+      {
+        "name": "Print",
+        "version": "2.24",
+        "uri": "widgets/Print/Widget",
+        "config": "configs/Print/config_widgets_Print_Widget_34.json",
+        "index": 9,
+        "id": "widgets_Print_Widget_34"
+      }
+    ],
+    "groups": []
+  },
+  "mobileLayout": {
+    "widgetOnScreen": {
+      "widgets": [
+        {
+          "uri": "themes/PlateauTheme/widgets/HeaderController/Widget",
+          "position": {
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "height": 40,
+            "relativeTo": "browser"
+          },
+          "version": "2.24"
+        },
+        {
+          "uri": "widgets/Scalebar/Widget",
+          "visible": true,
+          "position": {
+            "left": 25,
+            "bottom": 25,
+            "relativeTo": "map"
+          },
+          "version": "2.24"
+        },
+        {
+          "uri": "widgets/Search/Widget",
+          "visible": false,
+          "position": {
+            "left": 55,
+            "top": 5,
+            "relativeTo": "map"
+          },
+          "version": "2.24"
+        },
+        {
+          "uri": "widgets/Coordinate/Widget",
+          "visible": false,
+          "position": {
+            "left": 200,
+            "bottom": 20,
+            "relativeTo": "map"
+          },
+          "version": "2.24"
+        },
+        {
+          "uri": "widgets/OverviewMap/Widget",
+          "visible": false,
+          "position": {
+            "right": 0,
+            "bottom": 0,
+            "zIndex": 1
+          },
+          "version": "2.24"
+        },
+        {
+          "uri": "widgets/HomeButton/Widget",
+          "visible": true,
+          "inPanel": false,
+          "position": {
+            "left": 7,
+            "top": 75,
+            "relativeTo": "map"
+          },
+          "version": "2.24"
+        },
+        {
+          "uri": "widgets/MyLocation/Widget",
+          "visible": true,
+          "inPanel": false,
+          "position": {
+            "left": 7,
+            "top": 110,
+            "relativeTo": "map"
+          },
+          "version": "2.24"
+        },
+        {
+          "uri": "widgets/AttributeTable/Widget",
+          "visible": false,
+          "version": "2.24",
+          "position": {
+            "relativeTo": "browser"
+          }
+        },
+        {
+          "uri": "widgets/Splash/Widget",
+          "visible": false,
+          "position": {
+            "relativeTo": "browser"
+          },
+          "version": "2.24"
+        },
+        {
+          "uri": "widgets/ZoomSlider/Widget",
+          "visible": true,
+          "position": {
+            "top": 5,
+            "left": 7,
+            "relativeTo": "map"
+          },
+          "version": "2.24"
+        },
+        {
+          "uri": "widgets/ExtentNavigate/Widget",
+          "visible": false,
+          "position": {
+            "top": 149,
+            "left": 7
+          },
+          "version": 2.3
+        }
+      ]
+    },
+    "map": {
+      "position": {
+        "left": 0,
+        "top": 40,
+        "right": 0,
+        "bottom": 0
+      }
+    },
+    "widgetPool": {
+      "panel": {
+        "uri": "themes/PlateauTheme/panels/FoldablePanel/Panel",
+        "position": {
+          "top": 5,
+          "right": 5,
+          "bottom": 5,
+          "zIndex": 5
+        }
+      }
+    }
+  },
+  "loadingPage": {
+    "backgroundColor": "#c95050",
+    "backgroundImage": {
+      "visible": false
+    },
+    "loadingGif": {
+      "visible": true,
+      "uri": "configs/loading/images/predefined_loading_1.gif",
+      "width": 58,
+      "height": 29
+    }
+  },
+  "wabVersion": "2.24",
+  "isTemplateApp": true,
+  "isWebTier": false,
+  "httpProxy": {
+    "useProxy": true,
+    "alwaysUseProxy": false,
+    "url": "",
+    "rules": []
+  },
+  "dataSource": {
+    "dataSources": {
+      "widget~widgets_Query_Widget_31~0": {
+        "id": "widget~widgets_Query_Widget_31~0",
+        "type": "Features",
+        "label": "Colisions linas",
+        "dataSchema": {
+          "geometryType": "esriGeometryPoint",
+          "fields": [
+            {
+              "name": "hay_coord_colis",
+              "type": "esriFieldTypeString",
+              "alias": "Hay coordenadas colisión",
+              "sqlType": "sqlTypeOther",
+              "length": 254,
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "coord_x",
+              "type": "esriFieldTypeDouble",
+              "alias": "Coordenada X",
+              "sqlType": "sqlTypeOther",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "coord_y",
+              "type": "esriFieldTypeDouble",
+              "alias": "Coordenada Y",
+              "sqlType": "sqlTypeOther",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "num_apoio",
+              "type": "esriFieldTypeString",
+              "alias": "Numero apoio",
+              "sqlType": "sqlTypeOther",
+              "length": 50,
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "vano_colisio",
+              "type": "esriFieldTypeString",
+              "alias": "Vano colision",
+              "sqlType": "sqlTypeOther",
+              "length": 50,
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "data_rexistro",
+              "type": "esriFieldTypeString",
+              "alias": "Data rexistro",
+              "sqlType": "sqlTypeOther",
+              "length": 1073741822,
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "anio_rexistro",
+              "type": "esriFieldTypeInteger",
+              "alias": "Ano rexistro",
+              "sqlType": "sqlTypeOther",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "colision_elect",
+              "type": "esriFieldTypeString",
+              "alias": "Colisión/Electrificación",
+              "sqlType": "sqlTypeOther",
+              "length": 50,
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "morte_lesio",
+              "type": "esriFieldTypeString",
+              "alias": "Morte/Lesión",
+              "sqlType": "sqlTypeOther",
+              "length": 50,
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "nome_cient",
+              "type": "esriFieldTypeString",
+              "alias": "Nome cientifico",
+              "sqlType": "sqlTypeOther",
+              "length": 255,
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "especie",
+              "type": "esriFieldTypeString",
+              "alias": "Especie",
+              "sqlType": "sqlTypeOther",
+              "length": 255,
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "xenero",
+              "type": "esriFieldTypeString",
+              "alias": "Xenero",
+              "sqlType": "sqlTypeOther",
+              "length": 255,
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "familia",
+              "type": "esriFieldTypeString",
+              "alias": "Familia",
+              "sqlType": "sqlTypeOther",
+              "length": 255,
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "orde",
+              "type": "esriFieldTypeString",
+              "alias": "Orden",
+              "sqlType": "sqlTypeOther",
+              "length": 255,
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "estatus",
+              "type": "esriFieldTypeString",
+              "alias": "Estatus",
+              "sqlType": "sqlTypeOther",
+              "length": 255,
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "clasif_colis",
+              "type": "esriFieldTypeString",
+              "alias": "Clasificación colisión",
+              "sqlType": "sqlTypeOther",
+              "length": 255,
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "concello",
+              "type": "esriFieldTypeString",
+              "alias": "Concello",
+              "sqlType": "sqlTypeOther",
+              "length": 254,
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "zona_protec",
+              "type": "esriFieldTypeString",
+              "alias": "Zona proteccion avifauna",
+              "sqlType": "sqlTypeOther",
+              "length": 50,
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "num_exped",
+              "type": "esriFieldTypeString",
+              "alias": "Expediente",
+              "sqlType": "sqlTypeOther",
+              "length": 20,
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "nome",
+              "type": "esriFieldTypeString",
+              "alias": "Nome infraestructura",
+              "sqlType": "sqlTypeOther",
+              "length": 255,
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "nome_abrev",
+              "type": "esriFieldTypeString",
+              "alias": "Nome abreviado infraestructura",
+              "sqlType": "sqlTypeOther",
+              "length": 255,
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "observacio",
+              "type": "esriFieldTypeString",
+              "alias": "Observaciones",
+              "sqlType": "sqlTypeOther",
+              "length": 254,
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "objectid",
+              "type": "esriFieldTypeOID",
+              "alias": "objectid",
+              "sqlType": "sqlTypeOther",
+              "nullable": false,
+              "editable": false,
+              "domain": null,
+              "defaultValue": null
+            }
+          ],
+          "displayField": "hay_coord_colis",
+          "objectIdField": {
+            "name": "objectid",
+            "type": "esriFieldTypeOID",
+            "alias": "objectid",
+            "sqlType": "sqlTypeOther",
+            "nullable": false,
+            "editable": false,
+            "domain": null,
+            "defaultValue": null
+          },
+          "typeIdField": ""
+        }
+      },
+      "widget~widgets_Query_Widget_31~1": {
+        "id": "widget~widgets_Query_Widget_31~1",
+        "type": "Features",
+        "label": "Colisions parques",
+        "dataSchema": {
+          "geometryType": "esriGeometryPoint",
+          "fields": [
+            {
+              "name": "hay_coord_colis",
+              "type": "esriFieldTypeString",
+              "alias": "Hay coordenadas colision",
+              "sqlType": "sqlTypeOther",
+              "length": 254,
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "coord_x",
+              "type": "esriFieldTypeDouble",
+              "alias": "Coordenada X",
+              "sqlType": "sqlTypeOther",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "coord_y",
+              "type": "esriFieldTypeDouble",
+              "alias": "Coordenada Y",
+              "sqlType": "sqlTypeOther",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "aero",
+              "type": "esriFieldTypeString",
+              "alias": "Aeroxenerador",
+              "sqlType": "sqlTypeOther",
+              "length": 254,
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "data_rexistro",
+              "type": "esriFieldTypeString",
+              "alias": "Data rexistro",
+              "sqlType": "sqlTypeOther",
+              "length": 1073741822,
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "anio_rexistro",
+              "type": "esriFieldTypeInteger",
+              "alias": "Ano rexistro",
+              "sqlType": "sqlTypeOther",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "morte_lesio",
+              "type": "esriFieldTypeString",
+              "alias": "Morte/Lesion",
+              "sqlType": "sqlTypeOther",
+              "length": 50,
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "nome_cient",
+              "type": "esriFieldTypeString",
+              "alias": "Nome cientifico",
+              "sqlType": "sqlTypeOther",
+              "length": 255,
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "especie",
+              "type": "esriFieldTypeString",
+              "alias": "Expecie",
+              "sqlType": "sqlTypeOther",
+              "length": 255,
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "xenero",
+              "type": "esriFieldTypeString",
+              "alias": "Xenero",
+              "sqlType": "sqlTypeOther",
+              "length": 255,
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "familia",
+              "type": "esriFieldTypeString",
+              "alias": "Familia",
+              "sqlType": "sqlTypeOther",
+              "length": 255,
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "orde",
+              "type": "esriFieldTypeString",
+              "alias": "Orden",
+              "sqlType": "sqlTypeOther",
+              "length": 255,
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "estatus",
+              "type": "esriFieldTypeString",
+              "alias": "Estatus",
+              "sqlType": "sqlTypeOther",
+              "length": 255,
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "clasif_colis",
+              "type": "esriFieldTypeString",
+              "alias": "Clasificacion colision",
+              "sqlType": "sqlTypeOther",
+              "length": 255,
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "zona_protec",
+              "type": "esriFieldTypeString",
+              "alias": "Zona proteccion avifauna",
+              "sqlType": "sqlTypeOther",
+              "length": 50,
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "observacio",
+              "type": "esriFieldTypeString",
+              "alias": "Observaciones",
+              "sqlType": "sqlTypeOther",
+              "length": 254,
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "num_exped",
+              "type": "esriFieldTypeString",
+              "alias": "Expediente",
+              "sqlType": "sqlTypeOther",
+              "length": 20,
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "nome",
+              "type": "esriFieldTypeString",
+              "alias": "Nome infraestructura",
+              "sqlType": "sqlTypeOther",
+              "length": 255,
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "nome_abrev",
+              "type": "esriFieldTypeString",
+              "alias": "Nome abreviado infraestructura",
+              "sqlType": "sqlTypeOther",
+              "length": 255,
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "concello",
+              "type": "esriFieldTypeString",
+              "alias": "Concello",
+              "sqlType": "sqlTypeOther",
+              "length": 254,
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "objectid",
+              "type": "esriFieldTypeOID",
+              "alias": "objectid",
+              "sqlType": "sqlTypeOther",
+              "nullable": false,
+              "editable": false,
+              "domain": null,
+              "defaultValue": null
+            }
+          ],
+          "displayField": "hay_coord_colis",
+          "objectIdField": {
+            "name": "objectid",
+            "type": "esriFieldTypeOID",
+            "alias": "objectid",
+            "sqlType": "sqlTypeOther",
+            "nullable": false,
+            "editable": false,
+            "domain": null,
+            "defaultValue": null
+          },
+          "typeIdField": ""
+        }
+      },
+      "widget~widgets_Query_Widget_31~2": {
+        "id": "widget~widgets_Query_Widget_31~2",
+        "type": "Features",
+        "label": "Linas",
+        "dataSchema": {
+          "geometryType": "esriGeometryPolyline",
+          "fields": [
+            {
+              "name": "objectid",
+              "type": "esriFieldTypeOID",
+              "alias": "objectid",
+              "sqlType": "sqlTypeOther",
+              "nullable": false,
+              "editable": false,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "num_exped",
+              "type": "esriFieldTypeString",
+              "alias": "Expediente",
+              "sqlType": "sqlTypeOther",
+              "length": 254,
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "nome",
+              "type": "esriFieldTypeString",
+              "alias": "Nome",
+              "sqlType": "sqlTypeOther",
+              "length": 255,
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "nome_abrev",
+              "type": "esriFieldTypeString",
+              "alias": "Nome abreivado",
+              "sqlType": "sqlTypeOther",
+              "length": 255,
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "dist_buffer",
+              "type": "esriFieldTypeInteger",
+              "alias": "Distancia buffer",
+              "sqlType": "sqlTypeOther",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "tipo_declaracion",
+              "type": "esriFieldTypeString",
+              "alias": "Tipo declaración",
+              "sqlType": "sqlTypeOther",
+              "length": 255,
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "data_formulacion",
+              "type": "esriFieldTypeDate",
+              "alias": "Data formulación",
+              "sqlType": "sqlTypeOther",
+              "length": 8,
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "nome_titular",
+              "type": "esriFieldTypeString",
+              "alias": "Nome Titular",
+              "sqlType": "sqlTypeOther",
+              "length": 255,
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "concellos",
+              "type": "esriFieldTypeString",
+              "alias": "Concellos",
+              "sqlType": "sqlTypeOther",
+              "length": 512,
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "globalid",
+              "type": "esriFieldTypeString",
+              "alias": "globalid",
+              "sqlType": "sqlTypeOther",
+              "length": 38,
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "Shape__Length",
+              "type": "esriFieldTypeDouble",
+              "alias": "Shape__Length",
+              "sqlType": "sqlTypeDouble",
+              "nullable": true,
+              "editable": false,
+              "domain": null,
+              "defaultValue": null
+            }
+          ],
+          "displayField": "num_exped",
+          "objectIdField": {
+            "name": "objectid",
+            "type": "esriFieldTypeOID",
+            "alias": "objectid",
+            "sqlType": "sqlTypeOther",
+            "nullable": false,
+            "editable": false,
+            "domain": null,
+            "defaultValue": null
+          },
+          "typeIdField": ""
+        }
+      },
+      "widget~widgets_Query_Widget_31~3": {
+        "id": "widget~widgets_Query_Widget_31~3",
+        "type": "Features",
+        "label": "Limites parques",
+        "dataSchema": {
+          "geometryType": "esriGeometryPolygon",
+          "fields": [
+            {
+              "name": "num_exped",
+              "type": "esriFieldTypeString",
+              "alias": "Expediente",
+              "sqlType": "sqlTypeOther",
+              "length": 20,
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "nome",
+              "type": "esriFieldTypeString",
+              "alias": "Nome",
+              "sqlType": "sqlTypeOther",
+              "length": 255,
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "nome_abrev",
+              "type": "esriFieldTypeString",
+              "alias": "Nome abreviado",
+              "sqlType": "sqlTypeOther",
+              "length": 255,
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "tipo_declaracion",
+              "type": "esriFieldTypeString",
+              "alias": "Tipo declaracion",
+              "sqlType": "sqlTypeOther",
+              "length": 255,
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "data_formulacion",
+              "type": "esriFieldTypeDate",
+              "alias": "Data formulacion",
+              "sqlType": "sqlTypeOther",
+              "length": 8,
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "nome_titular",
+              "type": "esriFieldTypeString",
+              "alias": "Nome titular",
+              "sqlType": "sqlTypeOther",
+              "length": 255,
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "concellos",
+              "type": "esriFieldTypeString",
+              "alias": "Concellos",
+              "sqlType": "sqlTypeOther",
+              "length": 512,
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "objectid",
+              "type": "esriFieldTypeOID",
+              "alias": "objectid",
+              "sqlType": "sqlTypeOther",
+              "nullable": false,
+              "editable": false,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "globalid",
+              "type": "esriFieldTypeString",
+              "alias": "globalid",
+              "sqlType": "sqlTypeOther",
+              "length": 38,
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "Shape__Area",
+              "type": "esriFieldTypeDouble",
+              "alias": "Shape__Area",
+              "sqlType": "sqlTypeDouble",
+              "nullable": true,
+              "editable": false,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "Shape__Length",
+              "type": "esriFieldTypeDouble",
+              "alias": "Shape__Length",
+              "sqlType": "sqlTypeDouble",
+              "nullable": true,
+              "editable": false,
+              "domain": null,
+              "defaultValue": null
+            }
+          ],
+          "displayField": "num_exped",
+          "objectIdField": {
+            "name": "objectid",
+            "type": "esriFieldTypeOID",
+            "alias": "objectid",
+            "sqlType": "sqlTypeOther",
+            "nullable": false,
+            "editable": false,
+            "domain": null,
+            "defaultValue": null
+          },
+          "typeIdField": ""
+        }
+      },
+      "widget~widgets_Query_Widget_31~4": {
+        "id": "widget~widgets_Query_Widget_31~4",
+        "type": "Features",
+        "label": "Aeroxeneradores",
+        "dataSchema": {
+          "geometryType": "esriGeometryPoint",
+          "fields": [
+            {
+              "name": "objectid",
+              "type": "esriFieldTypeOID",
+              "alias": "objectid",
+              "sqlType": "sqlTypeOther",
+              "nullable": false,
+              "editable": false,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "situacion",
+              "type": "esriFieldTypeString",
+              "alias": "Situación",
+              "sqlType": "sqlTypeOther",
+              "length": 254,
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "etiq_xunta",
+              "type": "esriFieldTypeString",
+              "alias": "Etiqueta Xunta",
+              "sqlType": "sqlTypeOther",
+              "length": 50,
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "coord_x",
+              "type": "esriFieldTypeDouble",
+              "alias": "Coordenada X",
+              "sqlType": "sqlTypeOther",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "coord_y",
+              "type": "esriFieldTypeDouble",
+              "alias": "Coordenada Y",
+              "sqlType": "sqlTypeOther",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "mod_aero",
+              "type": "esriFieldTypeString",
+              "alias": "Modelo",
+              "sqlType": "sqlTypeOther",
+              "length": 254,
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "altura",
+              "type": "esriFieldTypeInteger",
+              "alias": "Altura",
+              "sqlType": "sqlTypeOther",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "diametro",
+              "type": "esriFieldTypeDouble",
+              "alias": "Diámetro",
+              "sqlType": "sqlTypeOther",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "p_nominal",
+              "type": "esriFieldTypeInteger",
+              "alias": "Potencia Nominal",
+              "sqlType": "sqlTypeOther",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "num_exped",
+              "type": "esriFieldTypeString",
+              "alias": "Expediente",
+              "sqlType": "sqlTypeOther",
+              "length": 20,
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "nome_infraest",
+              "type": "esriFieldTypeString",
+              "alias": "Nome infraestructura",
+              "sqlType": "sqlTypeOther",
+              "length": 255,
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "nome_abrev_infraest",
+              "type": "esriFieldTypeString",
+              "alias": "Nome abreviado infraestructura",
+              "sqlType": "sqlTypeOther",
+              "length": 255,
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "concello",
+              "type": "esriFieldTypeString",
+              "alias": "Concello",
+              "sqlType": "sqlTypeOther",
+              "length": 255,
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "globalid",
+              "type": "esriFieldTypeString",
+              "alias": "globalid",
+              "sqlType": "sqlTypeOther",
+              "length": 38,
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            }
+          ],
+          "displayField": "coord_x",
+          "objectIdField": {
+            "name": "objectid",
+            "type": "esriFieldTypeOID",
+            "alias": "objectid",
+            "sqlType": "sqlTypeOther",
+            "nullable": false,
+            "editable": false,
+            "domain": null,
+            "defaultValue": null
+          },
+          "typeIdField": "situacion"
+        }
+      },
+      "widget~widgets_Query_Widget_31~5": {
+        "id": "widget~widgets_Query_Widget_31~5",
+        "type": "Features",
+        "label": "Apoios",
+        "dataSchema": {
+          "geometryType": "esriGeometryPoint",
+          "fields": [
+            {
+              "name": "objectid",
+              "type": "esriFieldTypeOID",
+              "alias": "objectid",
+              "sqlType": "sqlTypeOther",
+              "nullable": false,
+              "editable": false,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "num_apoio",
+              "type": "esriFieldTypeString",
+              "alias": "Numero apoio",
+              "sqlType": "sqlTypeOther",
+              "length": 50,
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "coord_x",
+              "type": "esriFieldTypeDouble",
+              "alias": "Coordenada X",
+              "sqlType": "sqlTypeOther",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "coord_y",
+              "type": "esriFieldTypeDouble",
+              "alias": "Coordenada Y",
+              "sqlType": "sqlTypeOther",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "num_exped",
+              "type": "esriFieldTypeString",
+              "alias": "Expediente",
+              "sqlType": "sqlTypeOther",
+              "length": 20,
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "nome",
+              "type": "esriFieldTypeString",
+              "alias": "Nome infraestructura",
+              "sqlType": "sqlTypeOther",
+              "length": 255,
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "nome_abrev",
+              "type": "esriFieldTypeString",
+              "alias": "Nome abreviado infraestructura",
+              "sqlType": "sqlTypeOther",
+              "length": 255,
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "observacio",
+              "type": "esriFieldTypeString",
+              "alias": "Observaciones",
+              "sqlType": "sqlTypeOther",
+              "length": 100,
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "concello",
+              "type": "esriFieldTypeString",
+              "alias": "Concello",
+              "sqlType": "sqlTypeOther",
+              "length": 255,
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "globalid",
+              "type": "esriFieldTypeString",
+              "alias": "globalid",
+              "sqlType": "sqlTypeOther",
+              "length": 38,
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            }
+          ],
+          "displayField": "num_apoio",
+          "objectIdField": {
+            "name": "objectid",
+            "type": "esriFieldTypeOID",
+            "alias": "objectid",
+            "sqlType": "sqlTypeOther",
+            "nullable": false,
+            "editable": false,
+            "domain": null,
+            "defaultValue": null
+          },
+          "typeIdField": ""
+        }
+      }
+    },
+    "settings": {}
+  },
+  "logoAlt": "Deputación de Lugo",
+  "logoLink": "https://www.deputacionlugo.gal/gl"
+}

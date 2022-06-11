@@ -1,0 +1,1978 @@
+{
+  "layerInfos": [
+    {
+      "name": "Apoios",
+      "id": "1813378ef8c-layer-33",
+      "layer": {
+        "url": "https://services9.arcgis.com/FeolmdInvkatU1tZ/arcgis/rest/services/Infraestructuras_eolicas_ArcGIS_Online/FeatureServer/0",
+        "fields": [
+          {
+            "show": true,
+            "name": "num_apoio",
+            "alias": "Numero apoio"
+          },
+          {
+            "show": true,
+            "name": "coord_x",
+            "alias": "Coordenada X"
+          },
+          {
+            "show": true,
+            "name": "coord_y",
+            "alias": "Coordenada Y"
+          },
+          {
+            "show": true,
+            "name": "observacio",
+            "alias": "Observaciones"
+          },
+          {
+            "show": true,
+            "name": "num_exped",
+            "alias": "Expediente"
+          },
+          {
+            "show": true,
+            "name": "nome",
+            "alias": "Nome infraestructura"
+          },
+          {
+            "show": true,
+            "name": "nome_abrev",
+            "alias": "Nomae abreviado infraestructura"
+          },
+          {
+            "show": true,
+            "name": "concello",
+            "alias": "Concello"
+          },
+          {
+            "show": false,
+            "name": "objectid",
+            "alias": "objectid"
+          },
+          {
+            "show": false,
+            "name": "globalid",
+            "alias": "globalid"
+          }
+        ]
+      },
+      "show": true,
+      "showAttachments": false,
+      "sortField": "num_apoio",
+      "isDescending": false
+    },
+    {
+      "name": "Colisions linas",
+      "id": "1813378ef8c-layer-32",
+      "layer": {
+        "url": "https://services9.arcgis.com/FeolmdInvkatU1tZ/arcgis/rest/services/Infraestructuras_eolicas_ArcGIS_Online/FeatureServer/1",
+        "fields": [
+          {
+            "show": true,
+            "name": "hay_coord_colis",
+            "alias": "Hay coordenadas colision"
+          },
+          {
+            "show": true,
+            "name": "coord_x",
+            "alias": "Coordenada X"
+          },
+          {
+            "show": true,
+            "name": "coord_y",
+            "alias": "Coordenada Y"
+          },
+          {
+            "show": true,
+            "name": "num_apoio",
+            "alias": "Numero apoio"
+          },
+          {
+            "show": true,
+            "name": "vano_colisio",
+            "alias": "Vano colision"
+          },
+          {
+            "show": true,
+            "name": "data_rexistro",
+            "alias": "Data rexistro"
+          },
+          {
+            "show": true,
+            "name": "anio_rexistro",
+            "alias": "Ano rexistro"
+          },
+          {
+            "show": true,
+            "name": "colision_elect",
+            "alias": "Colision/Electrificacion"
+          },
+          {
+            "show": true,
+            "name": "morte_lesio",
+            "alias": "Morte/Lesion"
+          },
+          {
+            "show": true,
+            "name": "nome_cient",
+            "alias": "Nome cientifico"
+          },
+          {
+            "show": true,
+            "name": "especie",
+            "alias": "Especie"
+          },
+          {
+            "show": true,
+            "name": "xenero",
+            "alias": "Xenero"
+          },
+          {
+            "show": true,
+            "name": "familia",
+            "alias": "Familia"
+          },
+          {
+            "show": true,
+            "name": "orde",
+            "alias": "Orden"
+          },
+          {
+            "show": true,
+            "name": "estatus",
+            "alias": "Estatus"
+          },
+          {
+            "show": true,
+            "name": "clasif_colis",
+            "alias": "Clasificacion colision"
+          },
+          {
+            "show": true,
+            "name": "concello",
+            "alias": "Concello"
+          },
+          {
+            "show": true,
+            "name": "zona_protec",
+            "alias": "Zona proteccion avifauna"
+          },
+          {
+            "show": true,
+            "name": "num_exped",
+            "alias": "Expediente"
+          },
+          {
+            "show": true,
+            "name": "nome",
+            "alias": "Nome infraestructura"
+          },
+          {
+            "show": true,
+            "name": "nome_abrev",
+            "alias": "Nome abreviado infraestructura"
+          },
+          {
+            "show": true,
+            "name": "observacio",
+            "alias": "Observaciones"
+          },
+          {
+            "show": false,
+            "name": "objectid",
+            "alias": "objectid"
+          }
+        ]
+      },
+      "show": true,
+      "showAttachments": false,
+      "sortField": "data_rexistro",
+      "isDescending": false
+    },
+    {
+      "name": "Linas",
+      "id": "1813378ef8c-layer-31",
+      "layer": {
+        "url": "https://services9.arcgis.com/FeolmdInvkatU1tZ/arcgis/rest/services/Infraestructuras_eolicas_ArcGIS_Online/FeatureServer/2",
+        "fields": [
+          {
+            "show": true,
+            "name": "num_exped",
+            "alias": "Expediente"
+          },
+          {
+            "show": true,
+            "name": "nome",
+            "alias": "Nome"
+          },
+          {
+            "show": true,
+            "name": "nome_abrev",
+            "alias": "Nome abreivado"
+          },
+          {
+            "show": true,
+            "name": "dist_buffer",
+            "alias": "Distancia buffer"
+          },
+          {
+            "show": true,
+            "name": "tipo_declaracion",
+            "alias": "Tipo declaración"
+          },
+          {
+            "show": true,
+            "name": "data_formulacion",
+            "alias": "Data formulación"
+          },
+          {
+            "show": true,
+            "name": "nome_titular",
+            "alias": "Nome Titular"
+          },
+          {
+            "show": true,
+            "name": "concellos",
+            "alias": "Concellos"
+          },
+          {
+            "show": false,
+            "name": "objectid",
+            "alias": "objectid"
+          },
+          {
+            "show": false,
+            "name": "globalid",
+            "alias": "globalid"
+          },
+          {
+            "show": false,
+            "name": "Shape__Length",
+            "alias": "Shape__Length"
+          }
+        ]
+      },
+      "show": true,
+      "showAttachments": false,
+      "sortField": "nome_abrev",
+      "isDescending": false
+    },
+    {
+      "name": "Colisions parques",
+      "id": "1813378ef8c-layer-30",
+      "layer": {
+        "url": "https://services9.arcgis.com/FeolmdInvkatU1tZ/arcgis/rest/services/Infraestructuras_eolicas_ArcGIS_Online/FeatureServer/3",
+        "fields": [
+          {
+            "name": "hay_coord_colis",
+            "alias": "Hay coordenadas colision",
+            "show": true
+          },
+          {
+            "name": "coord_x",
+            "alias": "Coordenada X",
+            "show": true,
+            "format": {
+              "places": 6,
+              "digitSeparator": false
+            }
+          },
+          {
+            "name": "coord_y",
+            "alias": "Coordenada Y",
+            "show": true,
+            "format": {
+              "places": 6,
+              "digitSeparator": false
+            }
+          },
+          {
+            "name": "aero",
+            "alias": "Aeroxenerador",
+            "show": true
+          },
+          {
+            "name": "data_rexistro",
+            "alias": "Data rexistro",
+            "show": true
+          },
+          {
+            "name": "anio_rexistro",
+            "alias": "Ano rexistro",
+            "show": true,
+            "format": {
+              "places": 0,
+              "digitSeparator": false
+            }
+          },
+          {
+            "name": "morte_lesio",
+            "alias": "Morte/Lesion",
+            "show": true
+          },
+          {
+            "name": "nome_cient",
+            "alias": "Nome cientifico",
+            "show": true
+          },
+          {
+            "name": "especie",
+            "alias": "Expecie",
+            "show": true
+          },
+          {
+            "name": "xenero",
+            "alias": "Xenero",
+            "show": true
+          },
+          {
+            "name": "familia",
+            "alias": "Familia",
+            "show": true
+          },
+          {
+            "name": "orde",
+            "alias": "Orden",
+            "show": true
+          },
+          {
+            "name": "estatus",
+            "alias": "Estatus",
+            "show": true
+          },
+          {
+            "name": "clasif_colis",
+            "alias": "Clasificacion colision",
+            "show": true
+          },
+          {
+            "name": "zona_protec",
+            "alias": "Zona proteccion avifauna",
+            "show": true
+          },
+          {
+            "name": "observacio",
+            "alias": "Observaciones",
+            "show": true
+          },
+          {
+            "name": "num_exped",
+            "alias": "Expediente",
+            "show": true
+          },
+          {
+            "name": "nome",
+            "alias": "Nome infraestructura",
+            "show": true
+          },
+          {
+            "name": "nome_abrev",
+            "alias": "Nome abreviado infraestructura",
+            "show": true
+          },
+          {
+            "name": "concello",
+            "alias": "Concello",
+            "show": true
+          },
+          {
+            "name": "objectid",
+            "alias": "objectid",
+            "show": false
+          }
+        ]
+      },
+      "show": true,
+      "showAttachments": false,
+      "sortField": "data_rexistro",
+      "isDescending": false
+    },
+    {
+      "name": "Aeroxeneradores",
+      "id": "1813378ef8b-layer-29",
+      "layer": {
+        "url": "https://services9.arcgis.com/FeolmdInvkatU1tZ/arcgis/rest/services/Infraestructuras_eolicas_ArcGIS_Online/FeatureServer/4",
+        "fields": [
+          {
+            "name": "coord_x",
+            "alias": "Coordenada X",
+            "show": true,
+            "format": {
+              "places": 6,
+              "digitSeparator": false
+            }
+          },
+          {
+            "name": "coord_y",
+            "alias": "Coordenada Y",
+            "show": true,
+            "format": {
+              "places": 6,
+              "digitSeparator": false
+            }
+          },
+          {
+            "name": "mod_aero",
+            "alias": "Modelo",
+            "show": true
+          },
+          {
+            "name": "altura",
+            "alias": "Altura",
+            "show": true,
+            "format": {
+              "places": 0,
+              "digitSeparator": false
+            }
+          },
+          {
+            "name": "diametro",
+            "alias": "Diametro",
+            "show": true,
+            "format": {
+              "places": 3,
+              "digitSeparator": false
+            }
+          },
+          {
+            "name": "p_nominal",
+            "alias": "Potencia nominal",
+            "show": true,
+            "format": {
+              "places": 0,
+              "digitSeparator": false
+            }
+          },
+          {
+            "name": "situacion",
+            "alias": "Situacion",
+            "show": true
+          },
+          {
+            "name": "etiq_xunta",
+            "alias": "Etiqueta Xunta",
+            "show": true
+          },
+          {
+            "name": "num_exped",
+            "alias": "Expediente",
+            "show": true
+          },
+          {
+            "name": "nome_infraest",
+            "alias": "Nome infraestructura",
+            "show": true
+          },
+          {
+            "name": "nome_abrev_infraest",
+            "alias": "Nome abreviado infraestructura",
+            "show": true
+          },
+          {
+            "name": "objectid",
+            "alias": "objectid",
+            "show": false
+          },
+          {
+            "name": "concello",
+            "alias": "Concello",
+            "show": false
+          },
+          {
+            "name": "globalid",
+            "alias": "globalid",
+            "show": false
+          }
+        ]
+      },
+      "show": true,
+      "showAttachments": false,
+      "sortField": "etiq_xunta",
+      "isDescending": false
+    },
+    {
+      "name": "Torres meteoroloxicas",
+      "id": "1813378ef8b-layer-28",
+      "layer": {
+        "url": "https://services9.arcgis.com/FeolmdInvkatU1tZ/arcgis/rest/services/Infraestructuras_eolicas_ArcGIS_Online/FeatureServer/5",
+        "fields": [
+          {
+            "show": true,
+            "name": "coord_x",
+            "alias": "Coordenada X"
+          },
+          {
+            "show": true,
+            "name": "coord_y",
+            "alias": "Coordenada Y"
+          },
+          {
+            "show": true,
+            "name": "tipo_infraest",
+            "alias": "Tipo infraestructura"
+          },
+          {
+            "show": true,
+            "name": "situacion",
+            "alias": "Situacion"
+          },
+          {
+            "show": true,
+            "name": "num_exped",
+            "alias": "Expediente"
+          },
+          {
+            "show": true,
+            "name": "nome",
+            "alias": "Nome infraestructura"
+          },
+          {
+            "show": true,
+            "name": "nome_abrev",
+            "alias": "Nome abreviado infraestructura"
+          },
+          {
+            "show": true,
+            "name": "concello",
+            "alias": "Concello"
+          },
+          {
+            "show": false,
+            "name": "objectid",
+            "alias": "objectid"
+          },
+          {
+            "show": false,
+            "name": "globalid",
+            "alias": "globalid"
+          }
+        ]
+      },
+      "show": true,
+      "showAttachments": false,
+      "sortField": "nome_abrev",
+      "isDescending": false
+    },
+    {
+      "name": "Subestaciones",
+      "id": "1813378ef8a-layer-27",
+      "layer": {
+        "url": "https://services9.arcgis.com/FeolmdInvkatU1tZ/arcgis/rest/services/Infraestructuras_eolicas_ArcGIS_Online/FeatureServer/6",
+        "fields": [
+          {
+            "show": true,
+            "name": "coord_x",
+            "alias": "Coordenada X"
+          },
+          {
+            "show": true,
+            "name": "coord_y",
+            "alias": "Coordenada Y"
+          },
+          {
+            "show": true,
+            "name": "tipo_infraest",
+            "alias": "Tipo infraestructura"
+          },
+          {
+            "show": true,
+            "name": "situacion",
+            "alias": "Situacion"
+          },
+          {
+            "show": true,
+            "name": "num_exped",
+            "alias": "Expediente"
+          },
+          {
+            "show": true,
+            "name": "nome",
+            "alias": "Nome infraestructura"
+          },
+          {
+            "show": true,
+            "name": "nome_abrev",
+            "alias": "Nome abreviado infraestructura"
+          },
+          {
+            "show": true,
+            "name": "concello",
+            "alias": "Concello"
+          },
+          {
+            "show": false,
+            "name": "objectid",
+            "alias": "objectid"
+          },
+          {
+            "show": false,
+            "name": "globalid",
+            "alias": "globalid"
+          }
+        ]
+      },
+      "show": true,
+      "showAttachments": false,
+      "sortField": "nome_abrev",
+      "isDescending": false
+    },
+    {
+      "name": "Limites parques",
+      "id": "1813378ef8a-layer-26",
+      "layer": {
+        "url": "https://services9.arcgis.com/FeolmdInvkatU1tZ/arcgis/rest/services/Infraestructuras_eolicas_ArcGIS_Online/FeatureServer/7",
+        "fields": [
+          {
+            "show": true,
+            "name": "num_exped",
+            "alias": "Expediente"
+          },
+          {
+            "show": true,
+            "name": "nome",
+            "alias": "Nome"
+          },
+          {
+            "show": true,
+            "name": "nome_abrev",
+            "alias": "Nome abreviado"
+          },
+          {
+            "show": true,
+            "name": "tipo_declaracion",
+            "alias": "Tipo declaracion"
+          },
+          {
+            "show": true,
+            "name": "data_formulacion",
+            "alias": "Data formulacion"
+          },
+          {
+            "show": true,
+            "name": "nome_titular",
+            "alias": "Nome titular"
+          },
+          {
+            "show": true,
+            "name": "concellos",
+            "alias": "Concellos"
+          },
+          {
+            "show": false,
+            "name": "objectid",
+            "alias": "objectid"
+          },
+          {
+            "show": false,
+            "name": "globalid",
+            "alias": "globalid"
+          },
+          {
+            "show": true,
+            "name": "Shape__Area",
+            "alias": "Shape__Area"
+          },
+          {
+            "show": true,
+            "name": "Shape__Length",
+            "alias": "Shape__Length"
+          }
+        ]
+      },
+      "show": true,
+      "showAttachments": false,
+      "sortField": "nome_abrev",
+      "isDescending": false
+    },
+    {
+      "name": "Arbores senlleiras",
+      "id": "1813378ef8a-layer-25",
+      "layer": {
+        "url": "https://services9.arcgis.com/FeolmdInvkatU1tZ/arcgis/rest/services/Infraestructuras_eolicas_ArcGIS_Online/FeatureServer/8",
+        "fields": [
+          {
+            "show": true,
+            "name": "codigo",
+            "alias": "Codigo"
+          },
+          {
+            "show": true,
+            "name": "nome_cient",
+            "alias": "Nome científico"
+          },
+          {
+            "show": true,
+            "name": "familia",
+            "alias": "Familia"
+          },
+          {
+            "show": true,
+            "name": "nome_vulg",
+            "alias": "Nome vulgar"
+          },
+          {
+            "show": true,
+            "name": "provincia",
+            "alias": "Provincia"
+          },
+          {
+            "show": true,
+            "name": "concello",
+            "alias": "Concello"
+          },
+          {
+            "show": true,
+            "name": "parroquia",
+            "alias": "Parroquia"
+          },
+          {
+            "show": true,
+            "name": "lugar",
+            "alias": "Lugar"
+          },
+          {
+            "show": true,
+            "name": "altura",
+            "alias": "Altura"
+          },
+          {
+            "show": true,
+            "name": "diam_copa",
+            "alias": "Diámetro copa"
+          },
+          {
+            "show": true,
+            "name": "utm_x_etrs",
+            "alias": "Coordenada X"
+          },
+          {
+            "show": true,
+            "name": "utm_y_etrs",
+            "alias": "Coordenada Y"
+          },
+          {
+            "show": false,
+            "name": "objectid",
+            "alias": "OBJECTID"
+          },
+          {
+            "show": false,
+            "name": "id",
+            "alias": "ID"
+          }
+        ]
+      },
+      "show": true,
+      "showAttachments": false,
+      "sortField": "",
+      "isDescending": false
+    },
+    {
+      "name": "Formaciones senlleiras",
+      "id": "1813378ef8a-layer-24",
+      "layer": {
+        "url": "https://services9.arcgis.com/FeolmdInvkatU1tZ/arcgis/rest/services/Infraestructuras_eolicas_ArcGIS_Online/FeatureServer/9",
+        "fields": [
+          {
+            "show": true,
+            "name": "codigo",
+            "alias": "Codigo"
+          },
+          {
+            "show": true,
+            "name": "nome_cient",
+            "alias": "Nome científico"
+          },
+          {
+            "show": true,
+            "name": "familia",
+            "alias": "Familia"
+          },
+          {
+            "show": true,
+            "name": "provincia",
+            "alias": "Provincia"
+          },
+          {
+            "show": true,
+            "name": "concello",
+            "alias": "Concello"
+          },
+          {
+            "show": true,
+            "name": "altura_tot",
+            "alias": "Altura total"
+          },
+          {
+            "show": true,
+            "name": "altura_ata",
+            "alias": "Altura ata"
+          },
+          {
+            "show": true,
+            "name": "diametro_d",
+            "alias": "Diámetro"
+          },
+          {
+            "show": true,
+            "name": "nome_vulg",
+            "alias": "Nome vulgar"
+          },
+          {
+            "show": true,
+            "name": "parroquia",
+            "alias": "Parroquia"
+          },
+          {
+            "show": true,
+            "name": "utm_x_etrs",
+            "alias": "Coordenada X"
+          },
+          {
+            "show": true,
+            "name": "utm_y_etrs",
+            "alias": "Coordenada Y"
+          },
+          {
+            "show": false,
+            "name": "objectid",
+            "alias": "OBJECTID"
+          },
+          {
+            "show": false,
+            "name": "id",
+            "alias": "ID"
+          }
+        ]
+      },
+      "show": true,
+      "showAttachments": false,
+      "sortField": "",
+      "isDescending": false
+    },
+    {
+      "name": "Zonas Protección Avifauna",
+      "id": "1813378ef89-layer-23",
+      "layer": {
+        "url": "https://services9.arcgis.com/FeolmdInvkatU1tZ/arcgis/rest/services/Infraestructuras_eolicas_ArcGIS_Online/FeatureServer/10",
+        "fields": [
+          {
+            "show": true,
+            "name": "tipo",
+            "alias": "Tipo"
+          },
+          {
+            "show": false,
+            "name": "objectid",
+            "alias": "OBJECTID"
+          },
+          {
+            "show": true,
+            "name": "perimetro",
+            "alias": "Perimetro"
+          },
+          {
+            "show": false,
+            "name": "area",
+            "alias": "giseolicosgdb.giseolicos.ZONAS_PROTECCION_AVIFAUNA.area"
+          },
+          {
+            "show": true,
+            "name": "hectareas",
+            "alias": "Hectareas"
+          },
+          {
+            "show": false,
+            "name": "id",
+            "alias": "ID"
+          },
+          {
+            "show": false,
+            "name": "Shape__Area",
+            "alias": "Shape__Area"
+          },
+          {
+            "show": false,
+            "name": "Shape__Length",
+            "alias": "Shape__Length"
+          }
+        ]
+      },
+      "show": true,
+      "showAttachments": false,
+      "sortField": "",
+      "isDescending": false
+    },
+    {
+      "name": "Plan Conservación Charadrius",
+      "id": "1813378ef89-layer-22",
+      "layer": {
+        "url": "https://services9.arcgis.com/FeolmdInvkatU1tZ/arcgis/rest/services/Infraestructuras_eolicas_ArcGIS_Online/FeatureServer/11",
+        "fields": [
+          {
+            "show": true,
+            "name": "nome",
+            "alias": "Nome"
+          },
+          {
+            "show": true,
+            "name": "tipo",
+            "alias": "Tipo"
+          },
+          {
+            "show": true,
+            "name": "n2000",
+            "alias": "N2000"
+          },
+          {
+            "show": true,
+            "name": "reprod",
+            "alias": "Reproducción"
+          },
+          {
+            "show": true,
+            "name": "invern",
+            "alias": "Invernación"
+          },
+          {
+            "show": true,
+            "name": "provincia",
+            "alias": "Provincia"
+          },
+          {
+            "show": false,
+            "name": "objectid",
+            "alias": "OBJECTID"
+          },
+          {
+            "show": false,
+            "name": "id",
+            "alias": "ID"
+          },
+          {
+            "show": false,
+            "name": "Shape__Area",
+            "alias": "Shape__Area"
+          },
+          {
+            "show": false,
+            "name": "Shape__Length",
+            "alias": "Shape__Length"
+          }
+        ]
+      },
+      "show": true,
+      "showAttachments": false,
+      "sortField": "",
+      "isDescending": false
+    },
+    {
+      "name": "Plan Recuperación Emberiza",
+      "id": "1813378ef89-layer-21",
+      "layer": {
+        "url": "https://services9.arcgis.com/FeolmdInvkatU1tZ/arcgis/rest/services/Infraestructuras_eolicas_ArcGIS_Online/FeatureServer/12",
+        "fields": [
+          {
+            "show": true,
+            "name": "tipo",
+            "alias": "Tipo"
+          },
+          {
+            "show": true,
+            "name": "nome",
+            "alias": "Nome"
+          },
+          {
+            "show": true,
+            "name": "centroid_x",
+            "alias": "Centroide X"
+          },
+          {
+            "show": true,
+            "name": "centroid_y",
+            "alias": "Centroide Y"
+          },
+          {
+            "show": false,
+            "name": "objectid",
+            "alias": "OBJECTID"
+          },
+          {
+            "show": true,
+            "name": "perimetro",
+            "alias": "Perimetro"
+          },
+          {
+            "show": true,
+            "name": "hectareas",
+            "alias": "Hectareas"
+          },
+          {
+            "show": false,
+            "name": "id",
+            "alias": "ID"
+          },
+          {
+            "show": false,
+            "name": "Shape__Area",
+            "alias": "Shape__Area"
+          },
+          {
+            "show": false,
+            "name": "Shape__Length",
+            "alias": "Shape__Length"
+          }
+        ]
+      },
+      "show": true,
+      "showAttachments": false,
+      "sortField": "",
+      "isDescending": false
+    },
+    {
+      "name": "Plan Recuperación Emys",
+      "id": "1813378ef88-layer-20",
+      "layer": {
+        "url": "https://services9.arcgis.com/FeolmdInvkatU1tZ/arcgis/rest/services/Infraestructuras_eolicas_ArcGIS_Online/FeatureServer/13",
+        "fields": [
+          {
+            "show": true,
+            "name": "nome",
+            "alias": "Nome"
+          },
+          {
+            "show": true,
+            "name": "tipo",
+            "alias": "Tipo"
+          },
+          {
+            "show": true,
+            "name": "localidade",
+            "alias": "Localidade"
+          },
+          {
+            "show": true,
+            "name": "centroid_x",
+            "alias": "Centroide X"
+          },
+          {
+            "show": true,
+            "name": "centroid_y",
+            "alias": "Centroide Y"
+          },
+          {
+            "show": false,
+            "name": "objectid",
+            "alias": "OBJECTID"
+          },
+          {
+            "show": true,
+            "name": "perimetro",
+            "alias": "Perimetro"
+          },
+          {
+            "show": true,
+            "name": "hectareas",
+            "alias": "Hectareas"
+          },
+          {
+            "show": false,
+            "name": "id",
+            "alias": "ID"
+          },
+          {
+            "show": false,
+            "name": "Shape__Area",
+            "alias": "Shape__Area"
+          },
+          {
+            "show": false,
+            "name": "Shape__Length",
+            "alias": "Shape__Length"
+          }
+        ]
+      },
+      "show": true,
+      "showAttachments": false,
+      "sortField": "",
+      "isDescending": false
+    },
+    {
+      "name": "Zonificación Oso 2013",
+      "id": "1813378ef87-layer-19",
+      "layer": {
+        "url": "https://services9.arcgis.com/FeolmdInvkatU1tZ/arcgis/rest/services/Infraestructuras_eolicas_ArcGIS_Online/FeatureServer/14",
+        "fields": [
+          {
+            "show": true,
+            "name": "zona",
+            "alias": "Zona"
+          },
+          {
+            "show": false,
+            "name": "objectid",
+            "alias": "OBJECTID"
+          },
+          {
+            "show": true,
+            "name": "perimetro",
+            "alias": "Perimetro"
+          },
+          {
+            "show": true,
+            "name": "area",
+            "alias": "giseolicosgdb.giseolicos.ZONIFICACION_OSO_2013.area"
+          },
+          {
+            "show": true,
+            "name": "hectareas",
+            "alias": "Hectareas"
+          },
+          {
+            "show": false,
+            "name": "id",
+            "alias": "ID"
+          },
+          {
+            "show": false,
+            "name": "Shape__Area",
+            "alias": "Shape__Area"
+          },
+          {
+            "show": false,
+            "name": "Shape__Length",
+            "alias": "Shape__Length"
+          }
+        ]
+      },
+      "show": true,
+      "showAttachments": false,
+      "sortField": "",
+      "isDescending": false
+    },
+    {
+      "name": "Zonificación Oso 2012",
+      "id": "1813378ef87-layer-18",
+      "layer": {
+        "url": "https://services9.arcgis.com/FeolmdInvkatU1tZ/arcgis/rest/services/Infraestructuras_eolicas_ArcGIS_Online/FeatureServer/15",
+        "fields": [
+          {
+            "show": false,
+            "name": "objectid",
+            "alias": "OBJECTID"
+          },
+          {
+            "show": true,
+            "name": "zona",
+            "alias": "ZONA"
+          },
+          {
+            "show": true,
+            "name": "perimetro",
+            "alias": "Perimetro"
+          },
+          {
+            "show": true,
+            "name": "area",
+            "alias": "giseolicosgdb.giseolicos.ZONIFICACION_OSO_2013.area"
+          },
+          {
+            "show": true,
+            "name": "hectareas",
+            "alias": "Hectareas"
+          },
+          {
+            "show": false,
+            "name": "id",
+            "alias": "ID"
+          },
+          {
+            "show": false,
+            "name": "Shape__Area",
+            "alias": "Shape__Area"
+          },
+          {
+            "show": false,
+            "name": "Shape__Length",
+            "alias": "Shape__Length"
+          }
+        ]
+      },
+      "show": true,
+      "showAttachments": false,
+      "sortField": "",
+      "isDescending": false
+    },
+    {
+      "name": "Zonas Xestion Lobo",
+      "id": "1813378ef86-layer-17",
+      "layer": {
+        "url": "https://services9.arcgis.com/FeolmdInvkatU1tZ/arcgis/rest/services/Infraestructuras_eolicas_ArcGIS_Online/FeatureServer/16",
+        "fields": [
+          {
+            "show": true,
+            "name": "nome",
+            "alias": "Nome"
+          },
+          {
+            "show": true,
+            "name": "nome_mapa",
+            "alias": "Nome mapa"
+          },
+          {
+            "show": true,
+            "name": "zona",
+            "alias": "Zona"
+          },
+          {
+            "show": true,
+            "name": "cdord",
+            "alias": "Código orden"
+          },
+          {
+            "show": true,
+            "name": "cdconc",
+            "alias": "Código concello"
+          },
+          {
+            "show": true,
+            "name": "cdcom",
+            "alias": "Código comarca"
+          },
+          {
+            "show": true,
+            "name": "cdprov",
+            "alias": "Código provincia"
+          },
+          {
+            "show": true,
+            "name": "sup",
+            "alias": "Superficie"
+          },
+          {
+            "show": false,
+            "name": "objectid",
+            "alias": "OBJECTID"
+          },
+          {
+            "show": false,
+            "name": "id",
+            "alias": "ID"
+          },
+          {
+            "show": false,
+            "name": "Shape__Area",
+            "alias": "Shape__Area"
+          },
+          {
+            "show": false,
+            "name": "Shape__Length",
+            "alias": "Shape__Length"
+          }
+        ]
+      },
+      "show": true,
+      "showAttachments": false,
+      "sortField": "",
+      "isDescending": false
+    },
+    {
+      "name": "Parques Nacionais",
+      "id": "1813378ef86-layer-16",
+      "layer": {
+        "url": "https://services9.arcgis.com/FeolmdInvkatU1tZ/arcgis/rest/services/Infraestructuras_eolicas_ArcGIS_Online/FeatureServer/17",
+        "fields": []
+      },
+      "show": true,
+      "showAttachments": false,
+      "sortField": "",
+      "isDescending": false
+    },
+    {
+      "name": "Parques Naturais",
+      "id": "1813378ef86-layer-15",
+      "layer": {
+        "url": "https://services9.arcgis.com/FeolmdInvkatU1tZ/arcgis/rest/services/Infraestructuras_eolicas_ArcGIS_Online/FeatureServer/18",
+        "fields": []
+      },
+      "show": true,
+      "showAttachments": false,
+      "sortField": "",
+      "isDescending": false
+    },
+    {
+      "name": "Monumentos Naturais",
+      "id": "1813378ef86-layer-14",
+      "layer": {
+        "url": "https://services9.arcgis.com/FeolmdInvkatU1tZ/arcgis/rest/services/Infraestructuras_eolicas_ArcGIS_Online/FeatureServer/19",
+        "fields": []
+      },
+      "show": true,
+      "showAttachments": false,
+      "sortField": "",
+      "isDescending": false
+    },
+    {
+      "name": "Zona Humeda Inventario Humedais",
+      "id": "1813378ef85-layer-13",
+      "layer": {
+        "url": "https://services9.arcgis.com/FeolmdInvkatU1tZ/arcgis/rest/services/Infraestructuras_eolicas_ArcGIS_Online/FeatureServer/20",
+        "fields": [
+          {
+            "show": true,
+            "name": "cod",
+            "alias": "Código"
+          },
+          {
+            "show": true,
+            "name": "nome",
+            "alias": "Nome"
+          },
+          {
+            "show": true,
+            "name": "cat",
+            "alias": "Categoría"
+          },
+          {
+            "show": true,
+            "name": "data",
+            "alias": "Data"
+          },
+          {
+            "show": true,
+            "name": "sup_has",
+            "alias": "Superficie"
+          },
+          {
+            "show": false,
+            "name": "objectid",
+            "alias": "OBJECTID"
+          },
+          {
+            "show": true,
+            "name": "hectares",
+            "alias": "Hectares"
+          },
+          {
+            "show": false,
+            "name": "id",
+            "alias": "ID"
+          },
+          {
+            "show": false,
+            "name": "Shape__Area",
+            "alias": "Shape__Area"
+          },
+          {
+            "show": false,
+            "name": "Shape__Length",
+            "alias": "Shape__Length"
+          }
+        ]
+      },
+      "show": true,
+      "showAttachments": false,
+      "sortField": "",
+      "isDescending": false
+    },
+    {
+      "name": "Paixases Protexidos",
+      "id": "1813378ef85-layer-12",
+      "layer": {
+        "url": "https://services9.arcgis.com/FeolmdInvkatU1tZ/arcgis/rest/services/Infraestructuras_eolicas_ArcGIS_Online/FeatureServer/21",
+        "fields": [
+          {
+            "show": true,
+            "name": "cod",
+            "alias": "Código"
+          },
+          {
+            "show": true,
+            "name": "nome",
+            "alias": "Nome"
+          },
+          {
+            "show": true,
+            "name": "cat",
+            "alias": "Categoría"
+          },
+          {
+            "show": true,
+            "name": "data",
+            "alias": "Data"
+          },
+          {
+            "show": true,
+            "name": "sup_has",
+            "alias": "Superficie"
+          },
+          {
+            "show": false,
+            "name": "objectid",
+            "alias": "OBJECTID"
+          },
+          {
+            "show": false,
+            "name": "id",
+            "alias": "ID"
+          },
+          {
+            "show": false,
+            "name": "Shape__Area",
+            "alias": "Shape__Area"
+          },
+          {
+            "show": false,
+            "name": "Shape__Length",
+            "alias": "Shape__Length"
+          }
+        ]
+      },
+      "show": true,
+      "showAttachments": false,
+      "sortField": "",
+      "isDescending": false
+    },
+    {
+      "name": "ZEPA",
+      "id": "1813378ef85-layer-11",
+      "layer": {
+        "url": "https://services9.arcgis.com/FeolmdInvkatU1tZ/arcgis/rest/services/Infraestructuras_eolicas_ArcGIS_Online/FeatureServer/22",
+        "fields": [
+          {
+            "show": true,
+            "name": "site_code",
+            "alias": "Código"
+          },
+          {
+            "show": true,
+            "name": "site_name",
+            "alias": "Nome"
+          },
+          {
+            "show": true,
+            "name": "ac",
+            "alias": "Comunidad autónoma"
+          },
+          {
+            "show": true,
+            "name": "hectares",
+            "alias": "Hectares"
+          },
+          {
+            "show": false,
+            "name": "objectid",
+            "alias": "OBJECTID"
+          },
+          {
+            "show": false,
+            "name": "id",
+            "alias": "ID"
+          },
+          {
+            "show": false,
+            "name": "Shape__Area",
+            "alias": "Shape__Area"
+          },
+          {
+            "show": false,
+            "name": "Shape__Length",
+            "alias": "Shape__Length"
+          }
+        ]
+      },
+      "show": true,
+      "showAttachments": false,
+      "sortField": "",
+      "isDescending": false
+    },
+    {
+      "name": "ZEC",
+      "id": "1813378ef84-layer-10",
+      "layer": {
+        "url": "https://services9.arcgis.com/FeolmdInvkatU1tZ/arcgis/rest/services/Infraestructuras_eolicas_ArcGIS_Online/FeatureServer/23",
+        "fields": [
+          {
+            "show": true,
+            "name": "site_code",
+            "alias": "Código"
+          },
+          {
+            "show": true,
+            "name": "site_name",
+            "alias": "Nome"
+          },
+          {
+            "show": true,
+            "name": "ac",
+            "alias": "Comunidad autónoma"
+          },
+          {
+            "show": true,
+            "name": "hectares",
+            "alias": "Hectares"
+          },
+          {
+            "show": false,
+            "name": "objectid",
+            "alias": "OBJECTID"
+          },
+          {
+            "show": false,
+            "name": "id",
+            "alias": "ID"
+          },
+          {
+            "show": false,
+            "name": "Shape__Area",
+            "alias": "Shape__Area"
+          },
+          {
+            "show": false,
+            "name": "Shape__Length",
+            "alias": "Shape__Length"
+          }
+        ]
+      },
+      "show": true,
+      "showAttachments": false,
+      "sortField": "",
+      "isDescending": false
+    },
+    {
+      "name": "ZEPVN",
+      "id": "1813378ef84-layer-9",
+      "layer": {
+        "url": "https://services9.arcgis.com/FeolmdInvkatU1tZ/arcgis/rest/services/Infraestructuras_eolicas_ArcGIS_Online/FeatureServer/24",
+        "fields": []
+      },
+      "show": true,
+      "showAttachments": false,
+      "sortField": "",
+      "isDescending": false
+    },
+    {
+      "name": "ENIL",
+      "id": "1813378ef83-layer-8",
+      "layer": {
+        "url": "https://services9.arcgis.com/FeolmdInvkatU1tZ/arcgis/rest/services/Infraestructuras_eolicas_ArcGIS_Online/FeatureServer/25",
+        "fields": [
+          {
+            "show": true,
+            "name": "nome",
+            "alias": "Nome"
+          },
+          {
+            "show": true,
+            "name": "cat",
+            "alias": "Categoría"
+          },
+          {
+            "show": true,
+            "name": "decl_prov",
+            "alias": "Declaración provisional"
+          },
+          {
+            "show": true,
+            "name": "decl_defin",
+            "alias": "Declaración definitiva"
+          },
+          {
+            "show": true,
+            "name": "sup_has",
+            "alias": "Superficie"
+          },
+          {
+            "show": false,
+            "name": "objectid",
+            "alias": "OBJECTID"
+          },
+          {
+            "show": false,
+            "name": "shape_leng",
+            "alias": "Shape_Leng"
+          },
+          {
+            "show": false,
+            "name": "id",
+            "alias": "ID"
+          },
+          {
+            "show": false,
+            "name": "Shape__Area",
+            "alias": "Shape__Area"
+          },
+          {
+            "show": true,
+            "name": "Shape__Length",
+            "alias": "Shape__Length"
+          }
+        ]
+      },
+      "show": true,
+      "showAttachments": false,
+      "sortField": "",
+      "isDescending": false
+    },
+    {
+      "name": "EPIN",
+      "id": "1813378ef83-layer-7",
+      "layer": {
+        "url": "https://services9.arcgis.com/FeolmdInvkatU1tZ/arcgis/rest/services/Infraestructuras_eolicas_ArcGIS_Online/FeatureServer/26",
+        "fields": []
+      },
+      "show": true,
+      "showAttachments": false,
+      "sortField": "",
+      "isDescending": false
+    },
+    {
+      "name": "Reservas da biosfera",
+      "id": "1813378ef83-layer-6",
+      "layer": {
+        "url": "https://services9.arcgis.com/FeolmdInvkatU1tZ/arcgis/rest/services/Infraestructuras_eolicas_ArcGIS_Online/FeatureServer/27",
+        "fields": [
+          {
+            "show": true,
+            "name": "mab_code",
+            "alias": "Código"
+          },
+          {
+            "show": true,
+            "name": "mab_name",
+            "alias": "Nome"
+          },
+          {
+            "show": true,
+            "name": "mab_name2",
+            "alias": "Nome 2"
+          },
+          {
+            "show": true,
+            "name": "mab_declar",
+            "alias": "Declaración"
+          },
+          {
+            "show": true,
+            "name": "origen_mab",
+            "alias": "Orígen"
+          },
+          {
+            "show": true,
+            "name": "costa_mab",
+            "alias": "Costa"
+          },
+          {
+            "show": true,
+            "name": "marino_mab",
+            "alias": "Marino"
+          },
+          {
+            "show": true,
+            "name": "prov_n_mab",
+            "alias": "Provincia"
+          },
+          {
+            "show": true,
+            "name": "ccaa_n_mab",
+            "alias": "Comunidad autónoma"
+          },
+          {
+            "show": true,
+            "name": "mab_supofi",
+            "alias": "Superficie oficial"
+          },
+          {
+            "show": false,
+            "name": "objectid",
+            "alias": "OBJECTID"
+          },
+          {
+            "show": false,
+            "name": "ccaa_mab",
+            "alias": "CCAA_MAB"
+          },
+          {
+            "show": false,
+            "name": "shape_leng",
+            "alias": "Shape_Leng"
+          },
+          {
+            "show": false,
+            "name": "id",
+            "alias": "ID"
+          },
+          {
+            "show": false,
+            "name": "Shape__Area",
+            "alias": "Shape__Area"
+          },
+          {
+            "show": false,
+            "name": "Shape__Length",
+            "alias": "Shape__Length"
+          }
+        ]
+      },
+      "show": true,
+      "showAttachments": false,
+      "sortField": "",
+      "isDescending": false
+    },
+    {
+      "name": "Concellos",
+      "id": "1813378ef82-layer-5",
+      "layer": {
+        "url": "https://services9.arcgis.com/FeolmdInvkatU1tZ/arcgis/rest/services/Infraestructuras_eolicas_ArcGIS_Online/FeatureServer/28",
+        "fields": [
+          {
+            "show": true,
+            "name": "codconc",
+            "alias": "Código"
+          },
+          {
+            "show": true,
+            "name": "nomeconcel",
+            "alias": "Nome"
+          },
+          {
+            "show": true,
+            "name": "nomemay",
+            "alias": "Nome mayúsculas"
+          },
+          {
+            "show": true,
+            "name": "concello",
+            "alias": "Concello"
+          },
+          {
+            "show": true,
+            "name": "nomecapita",
+            "alias": "Nome capital"
+          },
+          {
+            "show": true,
+            "name": "codcom",
+            "alias": "Código comarca"
+          },
+          {
+            "show": true,
+            "name": "comarca",
+            "alias": "Comarca"
+          },
+          {
+            "show": true,
+            "name": "codprov",
+            "alias": "Código provincia"
+          },
+          {
+            "show": true,
+            "name": "provincia",
+            "alias": "Provincia"
+          },
+          {
+            "show": false,
+            "name": "objectid",
+            "alias": "OBJECTID"
+          },
+          {
+            "show": false,
+            "name": "codigoine",
+            "alias": "Código INE"
+          },
+          {
+            "show": false,
+            "name": "shape_leng",
+            "alias": "Shape_Leng"
+          },
+          {
+            "show": false,
+            "name": "Shape__Area",
+            "alias": "Shape__Area"
+          },
+          {
+            "show": false,
+            "name": "Shape__Length",
+            "alias": "Shape__Length"
+          }
+        ]
+      },
+      "show": true,
+      "showAttachments": false,
+      "sortField": "codconc",
+      "isDescending": false
+    },
+    {
+      "name": "Comarcas",
+      "id": "1813378ef82-layer-4",
+      "layer": {
+        "url": "https://services9.arcgis.com/FeolmdInvkatU1tZ/arcgis/rest/services/Infraestructuras_eolicas_ArcGIS_Online/FeatureServer/29",
+        "fields": [
+          {
+            "show": true,
+            "name": "codcom",
+            "alias": "Código comarca"
+          },
+          {
+            "show": true,
+            "name": "codprov",
+            "alias": "Código provincia"
+          },
+          {
+            "show": true,
+            "name": "comarca",
+            "alias": "Comarca"
+          },
+          {
+            "show": true,
+            "name": "provincia",
+            "alias": "Provincia"
+          },
+          {
+            "show": true,
+            "name": "comarcamay",
+            "alias": "Comarca maúsculas"
+          },
+          {
+            "show": false,
+            "name": "objectid",
+            "alias": "OBJECTID"
+          },
+          {
+            "show": false,
+            "name": "shape_leng",
+            "alias": "Shape_Leng"
+          },
+          {
+            "show": false,
+            "name": "Shape__Area",
+            "alias": "Shape__Area"
+          },
+          {
+            "show": false,
+            "name": "Shape__Length",
+            "alias": "Shape__Length"
+          }
+        ]
+      },
+      "show": true,
+      "showAttachments": false,
+      "sortField": "codcom",
+      "isDescending": false
+    },
+    {
+      "name": "Provincias",
+      "id": "1813378ef81-layer-3",
+      "layer": {
+        "url": "https://services9.arcgis.com/FeolmdInvkatU1tZ/arcgis/rest/services/Infraestructuras_eolicas_ArcGIS_Online/FeatureServer/30",
+        "fields": [
+          {
+            "show": true,
+            "name": "codprov",
+            "alias": "Código provincia"
+          },
+          {
+            "show": true,
+            "name": "nameunit",
+            "alias": "Nome"
+          },
+          {
+            "show": true,
+            "name": "natlevel",
+            "alias": "Level"
+          },
+          {
+            "show": true,
+            "name": "country",
+            "alias": "País"
+          },
+          {
+            "show": false,
+            "name": "objectid",
+            "alias": "OBJECTID"
+          },
+          {
+            "show": false,
+            "name": "inspireid",
+            "alias": "INSPIREID"
+          },
+          {
+            "show": false,
+            "name": "natcode",
+            "alias": "NATCODE"
+          },
+          {
+            "show": false,
+            "name": "codnut1",
+            "alias": "CODNUT1"
+          },
+          {
+            "show": false,
+            "name": "codnut2",
+            "alias": "CODNUT2"
+          },
+          {
+            "show": true,
+            "name": "codnut3",
+            "alias": "CODNUT3"
+          },
+          {
+            "show": true,
+            "name": "provincia",
+            "alias": "Provincia"
+          },
+          {
+            "show": true,
+            "name": "codine",
+            "alias": "CODINE"
+          },
+          {
+            "show": true,
+            "name": "shape_leng",
+            "alias": "Shape_Leng"
+          },
+          {
+            "show": true,
+            "name": "Shape__Area",
+            "alias": "Shape__Area"
+          },
+          {
+            "show": true,
+            "name": "Shape__Length",
+            "alias": "Shape__Length"
+          }
+        ]
+      },
+      "show": true,
+      "showAttachments": false,
+      "sortField": "codprov",
+      "isDescending": false
+    },
+    {
+      "name": "AFEC PATRIMONIO NATURAL",
+      "id": "1813378ef8d-layer-34",
+      "layer": {
+        "url": "https://services9.arcgis.com/FeolmdInvkatU1tZ/arcgis/rest/services/Infraestructuras_eolicas_ArcGIS_Online/FeatureServer/31"
+      },
+      "show": false,
+      "showAttachments": false,
+      "sortField": "objectid",
+      "isDescending": false
+    }
+  ],
+  "table": {
+    "pageSizeOptions": [
+      25,
+      50,
+      100,
+      1000
+    ]
+  },
+  "hideExportButton": false,
+  "initiallyExpand": false,
+  "filterByMapExtent": true,
+  "allowTextSelection": true,
+  "syncWithLayers": false
+}

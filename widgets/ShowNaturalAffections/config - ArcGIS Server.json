@@ -1,0 +1,7 @@
+{
+    "urlLayerParques":"https://localhost:6443/arcgis/rest/services/ParquesEolicos/Infraestructuras_eolicas_PRUEBA/MapServer/7",
+    "urlLayerLinas":"https://localhost:6443/arcgis/rest/services/ParquesEolicos/Infraestructuras_eolicas_PRUEBA/MapServer/2",
+    "urlTableAfeccionesNaturales":"https://localhost:6443/arcgis/rest/services/ParquesEolicos/Infraestructuras_eolicas_PRUEBA/MapServer/31",
+    "urlGeometryService":"https://utility.arcgisonline.com/arcgis/rest/services/Geometry/GeometryServer",
+    "urlServicioMapa":"https://localhost:6443/arcgis/rest/services/ParquesEolicos/Infraestructuras_eolicas_PRUEBA/MapServer/"
+}

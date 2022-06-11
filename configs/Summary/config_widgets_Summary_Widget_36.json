@@ -1,0 +1,18 @@
+{
+  "displayCluster": true,
+  "showFeatureCount": true,
+  "featureCountLabel": "Aeroxeneradores",
+  "summaryLayer": {
+    "fields": [
+      {
+        "type": "SUM",
+        "label": "Potencia Nominal",
+        "field": "p_nominal"
+      }
+    ],
+    "id": "1813378ef8b-layer-29",
+    "name": "Aeroxeneradores",
+    "filterField": "nome_abrev_infraest",
+    "url": "1813378ef8b-layer-29"
+  }
+}
