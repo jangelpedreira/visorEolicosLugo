@@ -7,7 +7,7 @@
   "spatialFilterLabel": "Filtros espaciales",
   "queries": [
     {
-      "url": "",
+      "url": "https://services9.arcgis.com/FeolmdInvkatU1tZ/arcgis/rest/services/Infraestructuras_eolicas_ArcGIS_Online/FeatureServer/1",
       "name": "Colisions linas",
       "icon": {
         "color": [
@@ -1240,6 +1240,564 @@
       "defaultExpand": true,
       "singleResultLayer": true,
       "webMapLayerId": "1813378ef8c-layer-33",
+      "customResultName": true
+    },
+    {
+      "url": "https://services9.arcgis.com/FeolmdInvkatU1tZ/arcgis/rest/services/Infraestructuras_eolicas_ArcGIS_Online/FeatureServer/5",
+      "name": "Torres meteoroloxicas",
+      "icon": {
+        "color": [
+          0,
+          0,
+          128,
+          128
+        ],
+        "size": 18,
+        "angle": 0,
+        "xoffset": 0,
+        "yoffset": 0,
+        "type": "esriSMS",
+        "style": "esriSMSCircle",
+        "outline": {
+          "color": [
+            0,
+            0,
+            128,
+            255
+          ],
+          "width": 0.75,
+          "type": "esriSLS",
+          "style": "esriSLSSolid"
+        }
+      },
+      "filter": {
+        "logicalOperator": "AND",
+        "parts": [
+          {
+            "fieldObj": {
+              "name": "situacion",
+              "label": "situacion",
+              "dateFormat": "",
+              "shortType": "string",
+              "type": "esriFieldTypeString"
+            },
+            "operator": "stringOperatorIs",
+            "valueObj": {
+              "isValid": true,
+              "type": "unique",
+              "value": ""
+            },
+            "interactiveObj": {
+              "prompt": "Situacion es",
+              "hint": "EXOLOTACIÓN",
+              "cascade": "previous"
+            },
+            "caseSensitive": false
+          },
+          {
+            "fieldObj": {
+              "name": "num_exped",
+              "label": "num_exped",
+              "dateFormat": "",
+              "shortType": "string",
+              "type": "esriFieldTypeString"
+            },
+            "operator": "stringOperatorIs",
+            "valueObj": {
+              "isValid": true,
+              "type": "unique",
+              "value": ""
+            },
+            "interactiveObj": {
+              "prompt": "Expediente es",
+              "hint": "1999/1101",
+              "cascade": "previous"
+            },
+            "caseSensitive": false
+          },
+          {
+            "fieldObj": {
+              "name": "nome",
+              "label": "nome",
+              "dateFormat": "",
+              "shortType": "string",
+              "type": "esriFieldTypeString"
+            },
+            "operator": "stringOperatorIs",
+            "valueObj": {
+              "isValid": true,
+              "type": "unique",
+              "value": ""
+            },
+            "interactiveObj": {
+              "prompt": "Nome infraestructura es",
+              "hint": "Parque Eólico Álabe-Refachón",
+              "cascade": "previous"
+            },
+            "caseSensitive": false
+          },
+          {
+            "fieldObj": {
+              "name": "nome_abrev",
+              "label": "nome_abrev",
+              "dateFormat": "",
+              "shortType": "string",
+              "type": "esriFieldTypeString"
+            },
+            "operator": "stringOperatorIs",
+            "valueObj": {
+              "isValid": true,
+              "type": "unique",
+              "value": ""
+            },
+            "interactiveObj": {
+              "prompt": "Nome abreviado infraestructura es",
+              "hint": "ÁLABE-REFACHÓN",
+              "cascade": "previous"
+            },
+            "caseSensitive": false
+          },
+          {
+            "fieldObj": {
+              "name": "concello",
+              "label": "concello",
+              "dateFormat": "",
+              "shortType": "string",
+              "type": "esriFieldTypeString"
+            },
+            "operator": "stringOperatorContains",
+            "valueObj": {
+              "isValid": true,
+              "type": "value",
+              "value": null
+            },
+            "interactiveObj": {
+              "prompt": "Concello contiene",
+              "hint": "Muras",
+              "cascade": "none"
+            },
+            "caseSensitive": false
+          }
+        ],
+        "expr": "",
+        "displaySQL": ""
+      },
+      "showSQL": true,
+      "spatialFilter": {
+        "currentMapExtent": null,
+        "drawing": null,
+        "useFeatures": null,
+        "fullLayerExtent": null
+      },
+      "popupInfo": {
+        "readFromWebMap": true
+      },
+      "orderByFields": [],
+      "useLayerSymbol": false,
+      "resultsSymbol": {
+        "color": [
+          0,
+          0,
+          128,
+          128
+        ],
+        "size": 18,
+        "angle": 0,
+        "xoffset": 0,
+        "yoffset": 0,
+        "type": "esriSMS",
+        "style": "esriSMSCircle",
+        "outline": {
+          "color": [
+            0,
+            0,
+            128,
+            255
+          ],
+          "width": 0.75,
+          "type": "esriSLS",
+          "style": "esriSLSSolid"
+        }
+      },
+      "canModifySymbol": false,
+      "enableExport": false,
+      "defaultExpand": true,
+      "singleResultLayer": true,
+      "webMapLayerId": "1813378ef8b-layer-28",
+      "customResultName": true
+    },
+    {
+      "url": "https://services9.arcgis.com/FeolmdInvkatU1tZ/arcgis/rest/services/Infraestructuras_eolicas_ArcGIS_Online/FeatureServer/6",
+      "name": "Subestaciones",
+      "icon": {
+        "color": [
+          0,
+          0,
+          128,
+          128
+        ],
+        "size": 18,
+        "angle": 0,
+        "xoffset": 0,
+        "yoffset": 0,
+        "type": "esriSMS",
+        "style": "esriSMSCircle",
+        "outline": {
+          "color": [
+            0,
+            0,
+            128,
+            255
+          ],
+          "width": 0.75,
+          "type": "esriSLS",
+          "style": "esriSLSSolid"
+        }
+      },
+      "filter": {
+        "logicalOperator": "AND",
+        "parts": [
+          {
+            "fieldObj": {
+              "name": "situacion",
+              "label": "situacion",
+              "dateFormat": "",
+              "shortType": "string",
+              "type": "esriFieldTypeString"
+            },
+            "operator": "stringOperatorIs",
+            "valueObj": {
+              "isValid": true,
+              "type": "unique",
+              "value": ""
+            },
+            "interactiveObj": {
+              "prompt": "Situacion es",
+              "hint": "EXPLOTACIÓN",
+              "cascade": "previous"
+            },
+            "caseSensitive": false
+          },
+          {
+            "fieldObj": {
+              "name": "num_exped",
+              "label": "num_exped",
+              "dateFormat": "",
+              "shortType": "string",
+              "type": "esriFieldTypeString"
+            },
+            "operator": "stringOperatorIs",
+            "valueObj": {
+              "isValid": true,
+              "type": "unique",
+              "value": ""
+            },
+            "interactiveObj": {
+              "prompt": "Expediente es",
+              "hint": "1999/1101",
+              "cascade": "previous"
+            },
+            "caseSensitive": false
+          },
+          {
+            "fieldObj": {
+              "name": "nome",
+              "label": "nome",
+              "dateFormat": "",
+              "shortType": "string",
+              "type": "esriFieldTypeString"
+            },
+            "operator": "stringOperatorIs",
+            "valueObj": {
+              "isValid": true,
+              "type": "unique",
+              "value": ""
+            },
+            "interactiveObj": {
+              "prompt": "Nome infraestructura es",
+              "hint": "Parque Eólico Álabe-Refachó",
+              "cascade": "previous"
+            },
+            "caseSensitive": false
+          },
+          {
+            "fieldObj": {
+              "name": "nome_abrev",
+              "label": "nome_abrev",
+              "dateFormat": "",
+              "shortType": "string",
+              "type": "esriFieldTypeString"
+            },
+            "operator": "stringOperatorIs",
+            "valueObj": {
+              "isValid": true,
+              "type": "unique",
+              "value": ""
+            },
+            "interactiveObj": {
+              "prompt": "Nome abreviado infraestructura es",
+              "hint": "ÁLABE-REFACHÓN",
+              "cascade": "previous"
+            },
+            "caseSensitive": false
+          },
+          {
+            "fieldObj": {
+              "name": "concello",
+              "label": "concello",
+              "dateFormat": "",
+              "shortType": "string",
+              "type": "esriFieldTypeString"
+            },
+            "operator": "stringOperatorContains",
+            "valueObj": {
+              "isValid": true,
+              "type": "value",
+              "value": null
+            },
+            "interactiveObj": {
+              "prompt": "Concello contiene",
+              "hint": "Muras",
+              "cascade": "none"
+            },
+            "caseSensitive": false
+          }
+        ],
+        "expr": "",
+        "displaySQL": ""
+      },
+      "showSQL": true,
+      "spatialFilter": {
+        "currentMapExtent": null,
+        "drawing": null,
+        "useFeatures": null,
+        "fullLayerExtent": null
+      },
+      "popupInfo": {
+        "readFromWebMap": true
+      },
+      "orderByFields": [],
+      "useLayerSymbol": false,
+      "resultsSymbol": {
+        "color": [
+          0,
+          0,
+          128,
+          128
+        ],
+        "size": 18,
+        "angle": 0,
+        "xoffset": 0,
+        "yoffset": 0,
+        "type": "esriSMS",
+        "style": "esriSMSCircle",
+        "outline": {
+          "color": [
+            0,
+            0,
+            128,
+            255
+          ],
+          "width": 0.75,
+          "type": "esriSLS",
+          "style": "esriSLSSolid"
+        }
+      },
+      "canModifySymbol": false,
+      "enableExport": false,
+      "defaultExpand": true,
+      "singleResultLayer": true,
+      "webMapLayerId": "1813378ef8a-layer-27",
+      "customResultName": true
+    },
+    {
+      "url": "https://services9.arcgis.com/FeolmdInvkatU1tZ/arcgis/rest/services/Infraestructuras_eolicas_ArcGIS_Online/FeatureServer/28",
+      "name": "Concellos",
+      "icon": {
+        "color": [
+          255,
+          255,
+          155,
+          128
+        ],
+        "size": 18,
+        "angle": 0,
+        "xoffset": 0,
+        "yoffset": 0,
+        "type": "esriSMS",
+        "style": "esriSMSCircle",
+        "outline": {
+          "color": [
+            0,
+            0,
+            128,
+            255
+          ],
+          "width": 0.75,
+          "type": "esriSLS",
+          "style": "esriSLSSolid"
+        }
+      },
+      "filter": {
+        "logicalOperator": "AND",
+        "parts": [
+          {
+            "fieldObj": {
+              "name": "nomeconcel",
+              "label": "nomeconcel",
+              "dateFormat": "",
+              "shortType": "string",
+              "type": "esriFieldTypeString"
+            },
+            "operator": "stringOperatorIs",
+            "valueObj": {
+              "isValid": true,
+              "type": "unique",
+              "value": ""
+            },
+            "interactiveObj": {
+              "prompt": "Nome es",
+              "hint": "Muras",
+              "cascade": "previous"
+            },
+            "caseSensitive": false
+          },
+          {
+            "fieldObj": {
+              "name": "comarca",
+              "label": "comarca",
+              "dateFormat": "",
+              "shortType": "string",
+              "type": "esriFieldTypeString"
+            },
+            "operator": "stringOperatorIs",
+            "valueObj": {
+              "isValid": true,
+              "type": "unique",
+              "value": ""
+            },
+            "interactiveObj": {
+              "prompt": "Comarca es",
+              "hint": "A Fonsagrada",
+              "cascade": "previous"
+            },
+            "caseSensitive": false
+          }
+        ],
+        "expr": "",
+        "displaySQL": ""
+      },
+      "showSQL": true,
+      "spatialFilter": {
+        "currentMapExtent": null,
+        "drawing": null,
+        "useFeatures": null,
+        "fullLayerExtent": null
+      },
+      "popupInfo": {
+        "readFromWebMap": true
+      },
+      "orderByFields": [],
+      "useLayerSymbol": false,
+      "resultsSymbol": {
+        "color": [
+          255,
+          255,
+          155,
+          128
+        ],
+        "outline": {
+          "color": [
+            115,
+            140,
+            61,
+            255
+          ],
+          "width": 1.5,
+          "type": "esriSLS",
+          "style": "esriSLSSolid"
+        },
+        "type": "esriSFS",
+        "style": "esriSFSSolid"
+      },
+      "canModifySymbol": false,
+      "enableExport": false,
+      "defaultExpand": true,
+      "singleResultLayer": true,
+      "webMapLayerId": "1813378ef82-layer-5",
+      "customResultName": true
+    },
+    {
+      "url": "",
+      "name": "Comarcas",
+      "icon": {
+        "color": [
+          255,
+          255,
+          155,
+          128
+        ],
+        "size": 18,
+        "angle": 0,
+        "xoffset": 0,
+        "yoffset": 0,
+        "type": "esriSMS",
+        "style": "esriSMSCircle",
+        "outline": {
+          "color": [
+            0,
+            0,
+            128,
+            255
+          ],
+          "width": 0.75,
+          "type": "esriSLS",
+          "style": "esriSLSSolid"
+        }
+      },
+      "filter": {
+        "logicalOperator": "AND",
+        "parts": [],
+        "expr": "1=1"
+      },
+      "showSQL": true,
+      "spatialFilter": {
+        "currentMapExtent": null,
+        "drawing": null,
+        "useFeatures": null,
+        "fullLayerExtent": null
+      },
+      "popupInfo": {
+        "readFromWebMap": true
+      },
+      "orderByFields": [],
+      "useLayerSymbol": false,
+      "resultsSymbol": {
+        "color": [
+          255,
+          255,
+          155,
+          128
+        ],
+        "outline": {
+          "color": [
+            115,
+            140,
+            61,
+            255
+          ],
+          "width": 1.5,
+          "type": "esriSLS",
+          "style": "esriSLSSolid"
+        },
+        "type": "esriSFS",
+        "style": "esriSFSSolid"
+      },
+      "canModifySymbol": false,
+      "enableExport": false,
+      "defaultExpand": true,
+      "singleResultLayer": true,
+      "webMapLayerId": "1813378ef82-layer-4",
       "customResultName": true
     }
   ]

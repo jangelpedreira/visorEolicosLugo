@@ -66,7 +66,8 @@
         "version": "2.24",
         "id": "widgets_Search_Widget_22",
         "name": "Search",
-        "config": "configs/Search/config_widgets_Search_Widget_22.json"
+        "config": "configs/Search/config_widgets_Search_Widget_22.json",
+        "visible": false
       },
       {
         "uri": "widgets/Coordinate/Widget",
@@ -244,13 +245,12 @@
       },
       {
         "name": "ShowNaturalAffections",
+        "label": "Mostrar afecciones naturales",
         "version": "2.23",
         "IsController": false,
         "uri": "widgets/ShowNaturalAffections/Widget",
-        "config": "configs/ShowNaturalAffections/config_widgets_ShowNaturalAffections_Widget_33.json",
         "index": 7,
-        "id": "widgets_ShowNaturalAffections_Widget_33",
-        "label": "Mostrar afecciones ambientales"
+        "id": "widgets_ShowNaturalAffections_Widget_37"
       },
       {
         "name": "Summary",
@@ -1521,6 +1521,548 @@
             "name": "objectid",
             "type": "esriFieldTypeOID",
             "alias": "objectid",
+            "sqlType": "sqlTypeOther",
+            "nullable": false,
+            "editable": false,
+            "domain": null,
+            "defaultValue": null
+          },
+          "typeIdField": ""
+        }
+      },
+      "widget~widgets_Query_Widget_31~6": {
+        "id": "widget~widgets_Query_Widget_31~6",
+        "type": "Features",
+        "label": "Torres meteoroloxicas",
+        "dataSchema": {
+          "geometryType": "esriGeometryPoint",
+          "fields": [
+            {
+              "name": "objectid",
+              "type": "esriFieldTypeOID",
+              "alias": "objectid",
+              "sqlType": "sqlTypeOther",
+              "nullable": false,
+              "editable": false,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "tipo_infraest",
+              "type": "esriFieldTypeString",
+              "alias": "Tipo infraestructura",
+              "sqlType": "sqlTypeOther",
+              "length": 254,
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "situacion",
+              "type": "esriFieldTypeString",
+              "alias": "Situacion",
+              "sqlType": "sqlTypeOther",
+              "length": 254,
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "coord_x",
+              "type": "esriFieldTypeDouble",
+              "alias": "Coordenada X",
+              "sqlType": "sqlTypeOther",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "coord_y",
+              "type": "esriFieldTypeDouble",
+              "alias": "Coordenada Y",
+              "sqlType": "sqlTypeOther",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "num_exped",
+              "type": "esriFieldTypeString",
+              "alias": "Expediente",
+              "sqlType": "sqlTypeOther",
+              "length": 20,
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "concello",
+              "type": "esriFieldTypeString",
+              "alias": "Concello",
+              "sqlType": "sqlTypeOther",
+              "length": 255,
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "nome",
+              "type": "esriFieldTypeString",
+              "alias": "Nome infraestructura",
+              "sqlType": "sqlTypeOther",
+              "length": 255,
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "nome_abrev",
+              "type": "esriFieldTypeString",
+              "alias": "Nome abreviado infraestructura",
+              "sqlType": "sqlTypeOther",
+              "length": 255,
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "globalid",
+              "type": "esriFieldTypeString",
+              "alias": "globalid",
+              "sqlType": "sqlTypeOther",
+              "length": 38,
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            }
+          ],
+          "displayField": "coord_x",
+          "objectIdField": {
+            "name": "objectid",
+            "type": "esriFieldTypeOID",
+            "alias": "objectid",
+            "sqlType": "sqlTypeOther",
+            "nullable": false,
+            "editable": false,
+            "domain": null,
+            "defaultValue": null
+          },
+          "typeIdField": "situacion"
+        }
+      },
+      "widget~widgets_Query_Widget_31~7": {
+        "id": "widget~widgets_Query_Widget_31~7",
+        "type": "Features",
+        "label": "Subestaciones",
+        "dataSchema": {
+          "geometryType": "esriGeometryPoint",
+          "fields": [
+            {
+              "name": "objectid",
+              "type": "esriFieldTypeOID",
+              "alias": "objectid",
+              "sqlType": "sqlTypeOther",
+              "nullable": false,
+              "editable": false,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "tipo_infraest",
+              "type": "esriFieldTypeString",
+              "alias": "Tipo infraestructura",
+              "sqlType": "sqlTypeOther",
+              "length": 254,
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "situacion",
+              "type": "esriFieldTypeString",
+              "alias": "Situacion",
+              "sqlType": "sqlTypeOther",
+              "length": 254,
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "coord_x",
+              "type": "esriFieldTypeDouble",
+              "alias": "Coordenada X",
+              "sqlType": "sqlTypeOther",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "coord_y",
+              "type": "esriFieldTypeDouble",
+              "alias": "Coordenada Y",
+              "sqlType": "sqlTypeOther",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "num_exped",
+              "type": "esriFieldTypeString",
+              "alias": "Expediente",
+              "sqlType": "sqlTypeOther",
+              "length": 20,
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "nome",
+              "type": "esriFieldTypeString",
+              "alias": "Nome infraestructura",
+              "sqlType": "sqlTypeOther",
+              "length": 255,
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "nome_abrev",
+              "type": "esriFieldTypeString",
+              "alias": "Nome abreviado infraestructura",
+              "sqlType": "sqlTypeOther",
+              "length": 255,
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "concello",
+              "type": "esriFieldTypeString",
+              "alias": "Concello",
+              "sqlType": "sqlTypeOther",
+              "length": 255,
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "globalid",
+              "type": "esriFieldTypeString",
+              "alias": "globalid",
+              "sqlType": "sqlTypeOther",
+              "length": 38,
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            }
+          ],
+          "displayField": "coord_x",
+          "objectIdField": {
+            "name": "objectid",
+            "type": "esriFieldTypeOID",
+            "alias": "objectid",
+            "sqlType": "sqlTypeOther",
+            "nullable": false,
+            "editable": false,
+            "domain": null,
+            "defaultValue": null
+          },
+          "typeIdField": "situacion"
+        }
+      },
+      "widget~widgets_Query_Widget_31~8": {
+        "id": "widget~widgets_Query_Widget_31~8",
+        "type": "Features",
+        "label": "Concellos",
+        "dataSchema": {
+          "geometryType": "esriGeometryPolygon",
+          "fields": [
+            {
+              "name": "codconc",
+              "type": "esriFieldTypeDouble",
+              "alias": "Código",
+              "sqlType": "sqlTypeOther",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "nomeconcel",
+              "type": "esriFieldTypeString",
+              "alias": "Nome",
+              "sqlType": "sqlTypeOther",
+              "length": 254,
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "nomemay",
+              "type": "esriFieldTypeString",
+              "alias": "Nome mayúsculas",
+              "sqlType": "sqlTypeOther",
+              "length": 50,
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "concello",
+              "type": "esriFieldTypeString",
+              "alias": "Concello",
+              "sqlType": "sqlTypeOther",
+              "length": 50,
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "nomecapita",
+              "type": "esriFieldTypeString",
+              "alias": "Nome capital",
+              "sqlType": "sqlTypeOther",
+              "length": 50,
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "codcom",
+              "type": "esriFieldTypeDouble",
+              "alias": "Código comarca",
+              "sqlType": "sqlTypeOther",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "comarca",
+              "type": "esriFieldTypeString",
+              "alias": "Comarca",
+              "sqlType": "sqlTypeOther",
+              "length": 50,
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "codprov",
+              "type": "esriFieldTypeDouble",
+              "alias": "Código provincia",
+              "sqlType": "sqlTypeOther",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "provincia",
+              "type": "esriFieldTypeString",
+              "alias": "Provincia",
+              "sqlType": "sqlTypeOther",
+              "length": 50,
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "objectid",
+              "type": "esriFieldTypeOID",
+              "alias": "OBJECTID",
+              "sqlType": "sqlTypeOther",
+              "nullable": false,
+              "editable": false,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "codigoine",
+              "type": "esriFieldTypeString",
+              "alias": "Código INE",
+              "sqlType": "sqlTypeOther",
+              "length": 254,
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "shape_leng",
+              "type": "esriFieldTypeDouble",
+              "alias": "Shape_Leng",
+              "sqlType": "sqlTypeOther",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "Shape__Area",
+              "type": "esriFieldTypeDouble",
+              "alias": "Shape__Area",
+              "sqlType": "sqlTypeDouble",
+              "nullable": true,
+              "editable": false,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "Shape__Length",
+              "type": "esriFieldTypeDouble",
+              "alias": "Shape__Length",
+              "sqlType": "sqlTypeDouble",
+              "nullable": true,
+              "editable": false,
+              "domain": null,
+              "defaultValue": null
+            }
+          ],
+          "displayField": "NomeConcel",
+          "objectIdField": {
+            "name": "objectid",
+            "type": "esriFieldTypeOID",
+            "alias": "OBJECTID",
+            "sqlType": "sqlTypeOther",
+            "nullable": false,
+            "editable": false,
+            "domain": null,
+            "defaultValue": null
+          },
+          "typeIdField": ""
+        }
+      },
+      "widget~widgets_Query_Widget_31~9": {
+        "id": "widget~widgets_Query_Widget_31~9",
+        "type": "Features",
+        "label": "Comarcas",
+        "dataSchema": {
+          "geometryType": "esriGeometryPolygon",
+          "fields": [
+            {
+              "name": "codcom",
+              "type": "esriFieldTypeDouble",
+              "alias": "Código comarca",
+              "sqlType": "sqlTypeOther",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "codprov",
+              "type": "esriFieldTypeDouble",
+              "alias": "Código provincia",
+              "sqlType": "sqlTypeOther",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "comarca",
+              "type": "esriFieldTypeString",
+              "alias": "Comarca",
+              "sqlType": "sqlTypeOther",
+              "length": 50,
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "provincia",
+              "type": "esriFieldTypeString",
+              "alias": "Provincia",
+              "sqlType": "sqlTypeOther",
+              "length": 50,
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "comarcamay",
+              "type": "esriFieldTypeString",
+              "alias": "Comarca maúsculas",
+              "sqlType": "sqlTypeOther",
+              "length": 50,
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "objectid",
+              "type": "esriFieldTypeOID",
+              "alias": "OBJECTID",
+              "sqlType": "sqlTypeOther",
+              "nullable": false,
+              "editable": false,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "shape_leng",
+              "type": "esriFieldTypeDouble",
+              "alias": "Shape_Leng",
+              "sqlType": "sqlTypeOther",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "Shape__Area",
+              "type": "esriFieldTypeDouble",
+              "alias": "Shape__Area",
+              "sqlType": "sqlTypeDouble",
+              "nullable": true,
+              "editable": false,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "Shape__Length",
+              "type": "esriFieldTypeDouble",
+              "alias": "Shape__Length",
+              "sqlType": "sqlTypeDouble",
+              "nullable": true,
+              "editable": false,
+              "domain": null,
+              "defaultValue": null
+            }
+          ],
+          "displayField": "CodCOM",
+          "objectIdField": {
+            "name": "objectid",
+            "type": "esriFieldTypeOID",
+            "alias": "OBJECTID",
             "sqlType": "sqlTypeOther",
             "nullable": false,
             "editable": false,

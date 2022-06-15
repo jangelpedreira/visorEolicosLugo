@@ -1,7 +1,0 @@
-{
-    "urlLayerParques":"https://services9.arcgis.com/FeolmdInvkatU1tZ/ArcGIS/rest/services/Infraestructuras_eolicas_ArcGIS_Online/FeatureServer/7",
-    "urlLayerLinas":"https://services9.arcgis.com/FeolmdInvkatU1tZ/ArcGIS/rest/services/Infraestructuras_eolicas_ArcGIS_Online/FeatureServer/2",
-    "urlTableAfeccionesNaturales":"https://services9.arcgis.com/FeolmdInvkatU1tZ/ArcGIS/rest/services/Infraestructuras_eolicas_ArcGIS_Online/FeatureServer/31",
-    "urlGeometryService":"https://utility.arcgisonline.com/arcgis/rest/services/Geometry/GeometryServer",
-    "urlServicioMapa":"https://services9.arcgis.com/FeolmdInvkatU1tZ/ArcGIS/rest/services/Infraestructuras_eolicas_ArcGIS_Online/FeatureServer/"
-}

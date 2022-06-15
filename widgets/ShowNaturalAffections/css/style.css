@@ -1,0 +1,23 @@
+.hoverTable{
+	width:100%; 
+	border-collapse:collapse; 
+}
+.hoverTable th{
+    cursor: default; 
+	padding:7px; border:#5a5a59  1px solid;
+    background-color: #7d7d7d;
+    color: #ffffff;
+}    
+.hoverTable td{ 
+	padding:7px; border:#5a5a59 1px solid;
+}
+/* Define the default color for all the table rows */
+.hoverTable tr{
+    cursor: pointer;
+	background: #ffffff;
+}
+/* Define the hover highlight color for the table row */
+.hoverTable tr:hover {
+    background-color: #e1e1e0;
+}
+

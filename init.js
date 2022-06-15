@@ -102,7 +102,8 @@ var ie = (function() {
       // //because we have jimu/dijit/GridLayout dijit, so we import this css here
       // window.path + 'libs/goldenlayout/goldenlayout-base.css',
       // window.path + 'libs/goldenlayout/goldenlayout-light-theme.css'
-	 
+	  '//maxcdn.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css',
+	  window.path + 'css/label_bootstrap.css' 
     ]);
 
     if (window.apiUrl.substr(window.apiUrl.length - 'arcgis-js-api/'.length,

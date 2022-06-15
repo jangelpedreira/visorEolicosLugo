@@ -34,21 +34,25 @@ define(['dojo/_base/declare', 'jimu/BaseWidget',
   'esri/Color',
   'bootstrap/Dropdown',
   'bootstrap/Tab',
-  'bootstrap/Modal'],
+  'bootstrap/Modal',
+],
   function (declare, BaseWidget, SimpleMarkerSymbol, SimpleLineSymbol,
     SimpleFillSymbol, graphicsUtils, FeatureLayer, SimpleRenderer,
     Query, QueryTask, GeometryService, BufferParameters, GraphicsLayer, esriConfig,
     lang, dom, domConstruct, domClass, array, Color) {
 
+    var featureLayerAfeccionAnterior = null;
     var numInfraestructurasPrevias = 0;
     var outFieldsInfraestructuras = new Array("num_exped", "nome", "nome_abrev");
     var outFieldsAfecciones = new Array("num_exped", "categoria", "tipo", "nome", "capa", "campo_id", "valor_id", "capa_id");
     var graphicsAfeccionesAnteriores = new GraphicsLayer();
-    var urlLayerParques = "";
-    var urlLayerLinas = "";
-    var urlTableAfeccionesNaturales = "";
-    var urlGeometryService = "";
-    var urlServicioMapa = "";
+
+
+    var urlLayerParques = "https://services9.arcgis.com/FeolmdInvkatU1tZ/ArcGIS/rest/services/Infraestructuras_eolicas_ArcGIS_Online/FeatureServer/7";
+    var urlLayerLinas = "https://services9.arcgis.com/FeolmdInvkatU1tZ/ArcGIS/rest/services/Infraestructuras_eolicas_ArcGIS_Online/FeatureServer/2";
+    var urlTableAfeccionesNaturales = "https://services9.arcgis.com/FeolmdInvkatU1tZ/ArcGIS/rest/services/Infraestructuras_eolicas_ArcGIS_Online/FeatureServer/31";
+    var urlGeometryService = "https://utility.arcgisonline.com/arcgis/rest/services/Geometry/GeometryServer";
+    var urlServicioMapa = "https://services9.arcgis.com/FeolmdInvkatU1tZ/ArcGIS/rest/services/Infraestructuras_eolicas_ArcGIS_Online/FeatureServer/";
 
     //To create a widget, you need to derive from BaseWidget.
     return declare([BaseWidget], {
@@ -69,7 +73,7 @@ define(['dojo/_base/declare', 'jimu/BaseWidget',
       _disconnectMapEventHandler: function () {
         console.log("-- IN _disconnectMapEventHandler");
         this._enableWebMapPopup();
-        
+
         if (this._mapClickHandler) {
           this._mapClickHandler.remove();
           this._mapClickHandler = null;
@@ -131,6 +135,7 @@ define(['dojo/_base/declare', 'jimu/BaseWidget',
         funcionOnClickInfraestructura = funcionOnClickInfraestructura2;
         funcionOnClickAfeccion = funcionOnClickAfeccion2;
 
+
         this.map.infoWindow.hide();
         //on map click clear the previous text in search textbox
         console.log("Entra en el evento click sobre el mapa");
@@ -180,8 +185,6 @@ define(['dojo/_base/declare', 'jimu/BaseWidget',
           queryParques.spatialRelationship = Query.SPATIAL_REL_INTERSECTS;
 
           console.log("Ejecutar query sobre la layer Parques");
-          console.log("QueryTaskParques: " + queryTaskParques);
-          console.log("QueryParques: " + queryParques);
           queryTaskParques.execute(queryParques, _showInfraestructuras("PARQUE"));
 
           // Implementar una consulta para obtener las linas eléctricas que intersecatan 
@@ -194,15 +197,7 @@ define(['dojo/_base/declare', 'jimu/BaseWidget',
           queryLinas.spatialRelationship = Query.SPATIAL_REL_INTERSECTS;
 
           console.log("Ejecutar query sobre la layer Linas");
-          console.log("QueryTaskLinas: " + queryTaskLinas);
-          console.log("QueryLinas: " + queryLinas);
-          queryTaskLinas.execute(queryLinas, _showInfraestructuras("LINA"), _showError);
-        }
-
-       function _showError(error) {
-          console.log("-- IN - showError");
-          console.log(error);
-          console.log("-- OUT - showError");
+          queryTaskLinas.execute(queryLinas, _showInfraestructuras("LINA"));
         }
 
         var _showInfraestructuras = function (tipoInfraestructura) {
@@ -282,9 +277,9 @@ define(['dojo/_base/declare', 'jimu/BaseWidget',
               campoId = feature.attributes["campo_id"];
               valorId = feature.attributes["valor_id"];
 
-             console.log("Afeccion -> Categoria: " + categoria + " - Tipo:" + tipo + " - Nome: " + nome + " - Capa: " + capa + " - Capa ID: " + capaId);
+              console.log("Afeccion -> Categoria: " + categoria + " - Tipo:" + tipo + " - Nome: " + nome + " - Capa: " + capa + " - Capa ID: " + capaId);
 
-             var featureRow = domConstruct.create("tr", { 'onClick': "funcionOnClickAfeccion('" + capa + "'," + capaId.toString() + ", '" + campoId + "', " + valorId + ");" }, "tableContentPatNatural");
+              var featureRow = domConstruct.create("tr", { 'onClick': "funcionOnClickAfeccion('" + capa + "'," + capaId.toString() + ", '" + campoId + "', " + valorId + ");" }, "tableContentPatNatural");
 
               var newCell0 = featureRow.insertCell(0);
               newCell0.innerHTML = categoria;
@@ -292,7 +287,7 @@ define(['dojo/_base/declare', 'jimu/BaseWidget',
               newCell1.innerHTML = tipo;
               var newCell1 = featureRow.insertCell(2);
               newCell1.innerHTML = nome;
-              
+
             }
             console.log("-- OUT showListadoAfecciones");
           }
@@ -321,29 +316,32 @@ define(['dojo/_base/declare', 'jimu/BaseWidget',
           // Seleccionar las infraestructuras Parques o Linas cuyo nº de expediente
           // es expediente
           var query = new Query();
-          var clausulaWhere = "num_exped = '" + expediente + "'";
+          var clausulaWhere = "num_exped = '" + expediente + "'";;
           query.where = clausulaWhere;
           query.outFields = outFieldsInfraestructuras;
           console.log("Seleccionar infraestructuras que cumplen la cláusula where: " + clausulaWhere);
-          
+          console.log("Query: ", query);
+          console.log("FeatureLayerInfraest: ", featureLayerInfraest);
+
+
           featureLayerInfraest.selectFeatures(query, FeatureLayer.SELECTION_NEW, function (featuresSelected) {
-           
-            console.log("Número de infraestructuras tras query: " + featuresSelected.length);
-          
-            //console.log("Infraestructura: " + featureLayerInfraest.name);
+
+            console.log("Número de infraestructuras tras query: " + featureLayerInfraest.graphics.length);
+
+            console.log("Infraestructura: " + featureLayerInfraest.name);
             console.log("Establecer simbología para la geometría de tipo: " + featureLayerInfraest.geometryType);
             // Establecer la simbología en función de la geometría de la infraestructura
             switch (featureLayerInfraest.geometryType) {
               case "esriGeometryPolyline":
                 // Simbología a aplicar a la infraestructura línea eléctrica
-                console.log("Simbología de tipo línea para la Feature layer: " + featuresSelected[0].name);
+                console.log("Simbología de tipo línea para la Feature layer: " + featureLayerInfraest.name);
                 var symbol = new SimpleLineSymbol(
                   SimpleLineSymbol.STYLE_SOLID,
                   new Color([255, 0, 0]), 3);
                 break;
               case "esriGeometryPolygon":
                 // Simbología a aplicar a la infraestructura parque eólico
-                console.log("Simbología de tipo polígono para la Feature layer: " + featuresSelected[0].name);
+                console.log("Simbología de tipo polígono para la Feature layer: " + featureLayerInfraest.name);
                 var symbol = new SimpleFillSymbol(
                   SimpleFillSymbol.STYLE_SOLID,
                   new SimpleLineSymbol(
@@ -353,28 +351,32 @@ define(['dojo/_base/declare', 'jimu/BaseWidget',
                 break;
             }
 
-            //featureLayerInfraest.setSelectionSymbol(symbol);
-            
-            // Añadir la infraestructura eólica sobre el mapa
+            featureLayerInfraest.setSelectionSymbol(symbol);
+
+            // Calcular la extensión de la capa a añadir al mapa
+            var featureLayerInfraestExtent = graphicsUtils.graphicsExtent(featuresSelected);
+
             for (i = 0; i < featuresSelected.length; i++) {
               var graphic = featuresSelected[i];
               graphic.setSymbol(symbol);
               that.map.graphics.add(graphic);
             }
-            
-            // Centrar el mapa en la capa              
+
+            // Centrar el mapa enla capa              
             // Calcular la extensión de la capa a añadir al mapa
             var featureLayerInfraestExtent = graphicsUtils.graphicsExtent(featuresSelected);
+            console.log("Feature layer extent: " + featureLayerInfraestExtent);
+
             var screenpoint = that.map.toScreen(featureLayerInfraestExtent);
             var mappoint = that.map.toMap(screenpoint);
             that.map.setExtent(featureLayerInfraestExtent, true);
 
             // Mostrar pop up de información de la afección
             //that.map.infoWindow.show(featureLayerAfeccionExtent.getCenter(), that.map.getInfoWindowAnchor(screenpoint));
-            
+
           });
           console.log("-- OUT showInfraestructura");
-        } 
+        }
 
         function funcionOnClickInfraestructura2(expediente, nomeAbreviado, tipoInfraestructura) {
           // Función que se invoca cuando el usuario selecciona una infraestructura del 
@@ -395,8 +397,6 @@ define(['dojo/_base/declare', 'jimu/BaseWidget',
           console.log("Llamar a la funcion showInfraestructura");
           showInfraestructura(expediente, tipoInfraestructura);
 
-          console.log("Borrar filas de la tabla de afeccciones");
-
           // Borrar las filas existentes en la tabla de afecciones 
           var node = document.getElementById('tableContentPatNatural');
           while (node.hasChildNodes()) {
@@ -406,9 +406,14 @@ define(['dojo/_base/declare', 'jimu/BaseWidget',
           // Obtener las afecciones del primer expediente de infraestructura encontrado
           // Obtener las poligonales de los parques que intersecatan con el punto 
 
-          var tipoAfeccion = "NATURAL"
+
+          var tipoAfeccion = "NATURAL";
+          // Calcular para cada tipo de afeccion sobre el patrimonio (NATURAL, CULTURAL) las entidades
+          // que se corresponden 
+
+          console.log("Tipo de afeccion: " + tipoAfeccion)
+          // Obtener la URL de la tabla AFEC_PATRIMONIO_NATURAL dentro del servico de edición
           var urlAfecciones = urlTableAfeccionesNaturales;
-          
           console.log("URL Afeccion: " + urlAfecciones)
 
           // Implementar la consulta para obtener 
@@ -416,26 +421,33 @@ define(['dojo/_base/declare', 'jimu/BaseWidget',
           var queryAfecciones = new Query();
           queryAfecciones.returnGeometry = false;
           queryAfecciones.outFields = outFieldsAfecciones;
-          
+          //queryAfeccionesNatural.orderByFields = ["cateogoria tipo DESC"];
+
           var clausulaWhere = "num_exped = '" + expediente + "'";
           queryAfecciones.where = clausulaWhere;
           console.log("clausulaWhere: " + clausulaWhere);
           console.log("Ejecutar query sobre tipo de afección " + tipoAfeccion);
-          queryTaskAfecciones.execute(queryAfecciones, _showListadoAfecciones(tipoAfeccion), _showError);
+          queryTaskAfecciones.execute(queryAfecciones, _showListadoAfecciones(tipoAfeccion));
           console.log("Ejecutada query");
-          
+
+
           console.log("-- OUT funcionOnClickInfraestructura2");
         }
 
+
         function funcionOnClickAfeccion2(capa, capaId, campoId, valorId) {
 
-          console.log("-- IN funcionOnClickAfeccion2");
+          console.log("-- IN uncionOnClickAfeccion2");
 
           console.log("Capa: " + capa + " - capaId: " + capaId.toString() + " - campoId: " + campoId + "- valorId: " + valorId);
 
-          // Borrar los grficos de las afecciones anteriores que se hubiera añadido al mapa
+          // Borrar entidad de afecciones anterior que se hubiera añadido al mapa
+          /*if (featureLayerAfeccionAnterior != null) {
+            console.log("Borrar la feature Afeccion anterior: " + featureLayerAfeccionAnterior.name + " - tipo geometría: " + featureLayerAfeccionAnterior.geometryType);
+            that.map.removeLayer(featureLayerAfeccionAnterior);
+          }*/
           console.log("Nº de graphics de afecciones anteriores a borrar: " + graphicsAfeccionesAnteriores.graphics.length);
-          for (i=0;i<graphicsAfeccionesAnteriores.graphics.length;i++) {
+          for (i = 0; i < graphicsAfeccionesAnteriores.graphics.length; i++) {
             //that.map.graphics.clear();
             that.map.graphics.remove(graphicsAfeccionesAnteriores.graphics[i]);
           }
@@ -461,7 +473,7 @@ define(['dojo/_base/declare', 'jimu/BaseWidget',
 
           featureLayerAfeccion.selectFeatures(query, FeatureLayer.SELECTION_NEW, function (featuresSelected) {
             // Se seleccionan las afecciones
-            console.log("Número de Afecciones tras la query: " + featuresSelected.length);
+            console.log("Número de Afecciones trasla query: " + featureLayerAfeccion.graphics.length);
 
             console.log("Feature layer de Afecciones: " + featureLayerAfeccion.name);
             console.log("Establecer simbología para la geometría de tipo: " + featureLayerAfeccion.geometryType);
@@ -493,11 +505,11 @@ define(['dojo/_base/declare', 'jimu/BaseWidget',
                   new SimpleLineSymbol(
                     SimpleLineSymbol.STYLE_SOLID,
                     new Color([0, 0, 255]), 2),
-                  new Color([0, 255, 255, 0.3]));                 
+                  new Color([0, 255, 255, 0.3]));
                 break;
             }
 
-            //featureLayerAfeccion.setSelectionSymbol(symbol);
+            featureLayerAfeccion.setSelectionSymbol(symbol);
 
             // Calcular la extensión de la capa a añadir al mapa
             var featureLayerAfeccionExtent = graphicsUtils.graphicsExtent(featuresSelected);
@@ -508,11 +520,13 @@ define(['dojo/_base/declare', 'jimu/BaseWidget',
               that.map.graphics.add(graphic);
               graphicsAfeccionesAnteriores.add(graphic)
             }
-            
+
             // Centrar el mapa enla capa              
             // Calcular la extensión de la capa a añadir al mapa
             var featureLayerAfeccionExtent = graphicsUtils.graphicsExtent(featuresSelected);
-            
+            console.log("Feature layer extent: " + featureLayerAfeccionExtent);
+
+
             if (featureLayerAfeccion.geometryType == "esriGeometryPoint") {
               // Centrar el mapa enla capa              
               console.log("Centrar la geometría de tipo punto");
@@ -524,9 +538,10 @@ define(['dojo/_base/declare', 'jimu/BaseWidget',
               var screenpoint = that.map.toScreen(featureLayerAfeccionExtent);
               var mappoint = that.map.toMap(screenpoint);
               that.map.setExtent(featureLayerAfeccionExtent, true);
-            }                     
+            }
           });
-          console.log("-- OUT funcionOnClickAfeccion2");
+          //featureLayerAfeccionAnterior = featureLayerAfeccion;
+          console.log("-- OUT uncionOnClickAfeccion2");
         }
 
         console.log("--OUT _onMapClick");
@@ -542,23 +557,20 @@ define(['dojo/_base/declare', 'jimu/BaseWidget',
         console.log("-- OUT postCreate");
       },
 
-      startup: function() {
-        console.log("-- IN startup");
+      /*startup: function() {
         this.inherited(arguments);
-        //this.mapIdNode.innerHTML = 'map id:' + this.map.id;
-        urlLayerParques = this.config.urlLayerParques;
-        console.log("URL Layer Parques: " + urlLayerParques);
-        urlLayerLinas = this.config.urlLayerLinas;
-        urlTableAfeccionesNaturales = this.config.urlTableAfeccionesNaturales;
-        urlGeometryService = this.config.urlGeometryService;
-        urlServicioMapa = this.config.urlServicioMapa;
-        console.log("-- OUT startup");
-      },
+        this.mapIdNode.innerHTML = 'map id:' + this.map.id;
+        console.log('startup');
+      },*/
 
 
       onOpen: function () {
         console.log("-- IN onOpen");
 
+        // Borrar la capa anterior del patrimonio ambiental o cultural que se añadió previamente al mapa
+        /*if (featureLayerAfeccionAnterior != null) {
+          this.map.removeLayer(featureLayerAfeccionAnterior);
+        }*/
         this.map.infoWindow.hide();
         this.map.graphics.clear();
 
@@ -576,6 +588,9 @@ define(['dojo/_base/declare', 'jimu/BaseWidget',
         //this.map.setInfoWindowOnClick(true);
         this._disconnectMapEventHandler();
 
+        /*if (featureLayerAfeccionAnterior != null) {
+          this.map.removeLayer(featureLayerAfeccionAnterior);
+        }*/
         this.map.infoWindow.hide();
         this.map.graphics.clear();
         console.log('-- OUT onClose');
@@ -586,6 +601,9 @@ define(['dojo/_base/declare', 'jimu/BaseWidget',
 
         this._disconnectMapEventHandler();
 
+        /*if (featureLayerAfeccionAnterior != null) {
+          this.map.removeLayer(featureLayerAfeccionAnterior);
+        }*/
         this.map.infoWindow.hide();
         this.map.graphics.clear();
         console.log('-- OUT onMinimize');
@@ -596,6 +614,9 @@ define(['dojo/_base/declare', 'jimu/BaseWidget',
 
         this._disconnectMapEventHandler();
 
+        /* if (featureLayerAfeccionAnterior != null) {
+           this.map.removeLayer(featureLayerAfeccionAnterior);
+         }*/
         this.map.infoWindow.hide();
         this.map.graphics.clear();
 
