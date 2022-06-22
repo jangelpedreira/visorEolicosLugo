@@ -220,11 +220,19 @@
         "index": 3
       },
       {
+        "name": "BasemapGallery",
+        "version": "2.24",
+        "uri": "widgets/BasemapGallery/Widget",
+        "config": "configs/BasemapGallery/config_widgets_BasemapGallery_Widget_38.json",
+        "index": 4,
+        "id": "widgets_BasemapGallery_Widget_38"
+      },
+      {
         "name": "Measurement",
         "version": "2.24",
         "uri": "widgets/Measurement/Widget",
         "config": "configs/Measurement/config_widgets_Measurement_Widget_35.json",
-        "index": 4,
+        "index": 5,
         "id": "widgets_Measurement_Widget_35"
       },
       {
@@ -232,7 +240,7 @@
         "version": "2.24",
         "uri": "widgets/Query/Widget",
         "config": "configs/Query/config_widgets_Query_Widget_31.json",
-        "index": 5,
+        "index": 6,
         "id": "widgets_Query_Widget_31"
       },
       {
@@ -241,8 +249,8 @@
         "version": "2.23",
         "IsController": false,
         "uri": "widgets/ShowNaturalAffections/Widget",
-        "index": 6,
-        "id": "widgets_ShowNaturalAffections_Widget_37"
+        "index": 7,
+        "id": "widgets_ShowNaturalAffections_Widget_39"
       },
       {
         "name": "Summary",
@@ -250,7 +258,7 @@
         "version": "2.24",
         "uri": "widgets/Summary/Widget",
         "config": "configs/Summary/config_widgets_Summary_Widget_36.json",
-        "index": 7,
+        "index": 8,
         "id": "widgets_Summary_Widget_36",
         "position": {
           "relativeTo": "map"
@@ -261,7 +269,7 @@
         "version": "2.24",
         "uri": "widgets/Print/Widget",
         "config": "configs/Print/config_widgets_Print_Widget_34.json",
-        "index": 8,
+        "index": 9,
         "id": "widgets_Print_Widget_34"
       }
     ],

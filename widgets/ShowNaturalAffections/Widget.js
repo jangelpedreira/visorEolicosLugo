@@ -325,23 +325,21 @@ define(['dojo/_base/declare', 'jimu/BaseWidget',
 
 
           featureLayerInfraest.selectFeatures(query, FeatureLayer.SELECTION_NEW, function (featuresSelected) {
+            // Selecciona las infraestructuras que cumplen las condiciones de búsqueda
+            console.log("Número de infraestructuras tras query: " + featuresSelected.length);
 
-            console.log("Número de infraestructuras tras query: " + featureLayerInfraest.graphics.length);
-
-            console.log("Infraestructura: " + featureLayerInfraest.name);
-            console.log("Establecer simbología para la geometría de tipo: " + featureLayerInfraest.geometryType);
+            console.log("Establecer simbología para el graphic de tipo: " + featuresSelected[0].geometry.type);
+            
             // Establecer la simbología en función de la geometría de la infraestructura
-            switch (featureLayerInfraest.geometryType) {
-              case "esriGeometryPolyline":
+            switch (featuresSelected[0].geometry.type) {
+              case "polyline":
                 // Simbología a aplicar a la infraestructura línea eléctrica
-                console.log("Simbología de tipo línea para la Feature layer: " + featureLayerInfraest.name);
                 var symbol = new SimpleLineSymbol(
                   SimpleLineSymbol.STYLE_SOLID,
                   new Color([255, 0, 0]), 3);
                 break;
-              case "esriGeometryPolygon":
+              case "polygon":
                 // Simbología a aplicar a la infraestructura parque eólico
-                console.log("Simbología de tipo polígono para la Feature layer: " + featureLayerInfraest.name);
                 var symbol = new SimpleFillSymbol(
                   SimpleFillSymbol.STYLE_SOLID,
                   new SimpleLineSymbol(
@@ -351,7 +349,7 @@ define(['dojo/_base/declare', 'jimu/BaseWidget',
                 break;
             }
 
-            featureLayerInfraest.setSelectionSymbol(symbol);
+            //featureLayerInfraest.setSelectionSymbol(symbol);
 
             // Calcular la extensión de la capa a añadir al mapa
             var featureLayerInfraestExtent = graphicsUtils.graphicsExtent(featuresSelected);
@@ -473,14 +471,13 @@ define(['dojo/_base/declare', 'jimu/BaseWidget',
 
           featureLayerAfeccion.selectFeatures(query, FeatureLayer.SELECTION_NEW, function (featuresSelected) {
             // Se seleccionan las afecciones
-            console.log("Número de Afecciones trasla query: " + featureLayerAfeccion.graphics.length);
+            console.log("Número de Afecciones tras la query: " + featuresSelected.length);
 
-            console.log("Feature layer de Afecciones: " + featureLayerAfeccion.name);
-            console.log("Establecer simbología para la geometría de tipo: " + featureLayerAfeccion.geometryType);
+            console.log("Establecer simbología para la geometría de tipo: " + featuresSelected[0].geometry.type);
+
             // Establecer la simbología en función de la geometría de la entidad de patrimonio afectada
-            switch (featureLayerAfeccion.geometryType) {
-              case "esriGeometryPoint":
-                console.log("Simbología de tipo punto para la Feature layer: " + featureLayerAfeccion.name);
+            switch (featuresSelected[0].geometry.type) {
+              case "point": 
                 // Simbología a aplicar al elemento de patrimonio natural de tipo punto afectado
                 var symbol = new SimpleMarkerSymbol(
                   SimpleMarkerSymbol.STYLE_CIRCLE,
@@ -490,16 +487,14 @@ define(['dojo/_base/declare', 'jimu/BaseWidget',
                     new Color([0, 0, 255]), 2),
                   new Color([0, 255, 255, 0.8]));
                 break;
-              case "esriGeometryPolyline":
+              case "polyline":
                 // Simbología a aplicar al elemento de patrimonio natural de tipo línea afectado
-                console.log("Simbología de tipo línea para la Feature layer: " + featureLayerAfeccion.name);
                 var symbol = new SimpleLineSymbol(
                   SimpleLineSymbol.STYLE_SOLID,
                   new Color([0, 255, 255]), 2);
                 break;
-              case "esriGeometryPolygon":
+              case "polygon":
                 // Simbología a aplicar al elemento de patrimonio natural de tipo línea afectado
-                console.log("Simbología de tipo polígono para la Feature layer: " + featureLayerAfeccion.name);
                 var symbol = new SimpleFillSymbol(
                   SimpleFillSymbol.STYLE_SOLID,
                   new SimpleLineSymbol(
@@ -509,7 +504,7 @@ define(['dojo/_base/declare', 'jimu/BaseWidget',
                 break;
             }
 
-            featureLayerAfeccion.setSelectionSymbol(symbol);
+            //featureLayerAfeccion.setSelectionSymbol(symbol);
 
             // Calcular la extensión de la capa a añadir al mapa
             var featureLayerAfeccionExtent = graphicsUtils.graphicsExtent(featuresSelected);
